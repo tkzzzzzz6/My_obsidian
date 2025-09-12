@@ -2,5 +2,8 @@
   "obsidian-excalidraw-plugin",
   "better-word-count",
   "file-explorer-note-count",
-  "obsidian-git"
+  "obsidian-git",
+  "github-sync",
+  "github-copilot",
+  "diagram-zoom-drag"
 ]

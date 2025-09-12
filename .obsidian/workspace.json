@@ -182,9 +182,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "bc5cd0b8b4665799",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -206,7 +216,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b4fe466f5b8a69d3",
+  "active": "bc5cd0b8b4665799",
   "lastOpenFiles": [
     "科研/grata/Pasted image 20250912212805.png",
     "科研/grata/论文撰写.md",
