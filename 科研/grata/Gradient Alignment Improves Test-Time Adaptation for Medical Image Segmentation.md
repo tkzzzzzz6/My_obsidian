@@ -16,24 +16,16 @@ Test-time adaptation (TTA) has emerged as a prospective paradigm to mitigate dom
 
 However, all these methods, based on gradient descent, overlook two critical elements in the optimization procedure: the **direction** and the **step-size**. The $i$-th optimization procedure of the pre-trained model with parameters $\theta$ can be formulated as $\theta_{i+1} \leftarrow \theta_i - \eta\nabla L_{pse}(\theta_i)$, where $\eta$ is the learning rate, and $\nabla L_{pse}$ denotes the gradient produced by the self-supervised objective function, called **pseudo gradient**. Obviously, the optimization direction is determined by $\nabla L_{pse}(\theta_i)$, and the optimization step-size depends on $\eta$. 
 
-In Figure 1(a), we displayed two gradients: an **empirical gradient**, customized for the specific task (segmentation in this study) using provided labels and not encountered in the TTA setup; and a **pseudo gradient**, primarily employed for fine-tuning pre-trained models in existing TTA methods. Ideally, the pseudo gradient should exhibit a direction similar to the empirical gradient. Unfortunately, due to the lack of reliable supervision, their directions may differ significantly, posing challenges to model optimization. Current TTA methods simply optimize the pseudo gradient, failing to address this issue. Moreover, concerning the learning rate, almost all these methods employ a fixed value, thereby restricting the pre-trained models from being adaptively fine-tuned on diverse test data.
-
 然而，这些基于梯度下降的方法在优化过程中忽视了两个关键要素：**方向**与**步长**。预训练模型在第 $i$ 次迭代的更新可表示为 $\theta_{i+1} \leftarrow \theta_i - \eta \nabla L_{\text{pse}}(\theta_i)$，其中 $\eta$ 为学习率，$\nabla L_{\text{pse}}$ 为由自监督目标生成的伪梯度。显然，优化方向由 $\nabla L_{\text{pse}}(\theta_i)$ 决定，而优化步长则取决于 $\eta$。然而，伪梯度与经验梯度（依赖标注数据，代表分割任务的真实方向）之间往往存在显著偏差，使得优化难以收敛到理想解。同时，几乎所有现有方法都采用固定学习率，限制了模型在多样化测试数据上的自适应能力。
 
-为此，本文提出了一种新的 TTA 方法——**基于梯度对齐的测试时自适应（GraTa）**。GraTa 同时优化梯度方向与学习率：通过引入辅助梯度与伪梯度进行对齐，减少二者在任务相关分量上的差异，从而逼近经验梯度；并设计基于余弦相似度的动态学习率，以根据梯度间的角度自适应地调整步长。当伪梯度与辅助梯度冲突较大时，学习率被调小以避免不稳定更新；当二者方向一致时，则分配更大的学习率以加速收敛。大量实验证明，GraTa 在医学图像分割基准任务中显著优于现有最先进的 TTA 方法。
+In Figure 1(a), we displayed two gradients: an **empirical gradient**, customized for the specific task (segmentation in this study) using provided labels and not encountered in the TTA setup; and a **pseudo gradient**, primarily employed for fine-tuning pre-trained models in existing TTA methods. Ideally, the pseudo gradient should exhibit a direction similar to the empirical gradient. Unfortunately, due to the lack of reliable supervision, their directions may differ significantly, posing challenges to model optimization. Current TTA methods simply optimize the pseudo gradient, failing to address this issue. Moreover, concerning the learning rate, almost all these methods employ a fixed value, thereby restricting the pre-trained models from being adaptively fine-tuned on diverse test data.
+在图1（a）中，我们展示了两种梯度：一种是**经验梯度**，它是为特定任务（本研究中的分割任务）定制的，使用了提供的标签，且在测试时自适应（TTA）设置中不会遇到；另一种是**伪梯度**，主要用于现有TTA方法中对预训练模型进行微调。理想情况下，伪梯度应表现出与经验梯度相似的方向。遗憾的是，由于缺乏可靠的监督，它们的方向可能存在显著差异，这给模型优化带来了挑战。当前的TTA方法只是对伪梯度进行优化，未能解决这一问题。此外，在学习率方面，几乎所有这些方法都采用固定值，这限制了预训练模型对不同测试数据进行自适应微调。
 
-本文的主要贡献如下：
+In this paper, we focus on optimizing both the optimization direction and the learning rate. We propose a novel TTA method, namely Gradient alignment-based Test-time adaptation (GraTa). GraTa aims to improve the gradient direction through gradient alignment and enables pre-trained models to adapt to test data using a dynamic learning rate. As shown in Figure 1(b), we incorporate a new auxiliary objective, i.e., gradient alignment, by introducing an auxiliary gradient to the pseudo one. Specifically, we employ the consistency loss to produce the pseudo gradient, while leveraging the gradient derived from the entropy loss as the auxiliary one. The entropy loss is computed on the original test data. The consistency loss is conducted on the weak and strong augmentation variants of the test data. Through alignment, the model is capable of excavating the similarities between distinct gradients, especially the components relevant to the current segmentation task, and approximating the empirical gradient (see Figure 1(c)). Furthermore, we also present a dynamic learning rate, which is inversely proportional to the angle between these two gradients, to adaptively fine-tune the pre-trained models. A larger angle implies greater conflict in the optimization of the two gradients, thus requiring a smaller learning rate, and vice versa. Extensive experiments demonstrate that our GraTa achieves a superior performance over other state-of-the-art TTA methods.
+在本文中，我们重点对优化方向和学习率进行优化。我们提出了一种新颖的测试时自适应（TTA）方法，即基于梯度对齐的测试时自适应（GraTa）。GraTa旨在通过梯度对齐改善梯度方向，并使预训练模型能够利用动态学习率来适应测试数据。如图1（b）所示，我们通过向伪梯度引入辅助梯度，融入了一个新的辅助目标，即梯度对齐。具体而言，我们利用一致性损失来生成伪梯度，同时将由熵损失导出的梯度用作辅助梯度。熵损失是在原始测试数据上计算的。一致性损失则是在测试数据的弱增强和强增强变体上进行的。通过对齐，模型能够挖掘不同梯度之间的相似性，特别是与当前分割任务相关的成分，并逼近经验梯度（见图1（c））。此外，我们还提出了一种动态学习率，该学习率与这两个梯度之间的夹角成反比，用于自适应地微调预训练模型。夹角越大，意味着这两个梯度在优化过程中的冲突越大，因此需要更小的学习率，反之亦然。大量实验表明，我们的GraTa相较于其他最先进的TTA方法，取得了更优异的性能。
+Our contributions are three-fold: (1) we rethink the optimization procedure in existing TTA methods and propose GraTa to improve both the optimization direction and stepsize; (2) we align the pseudo and auxiliary gradients, aimed at distinct objectives, to reduce the divergence of their taskspecific components, thereby improving the optimization direction; and (3) we design a variable learning rate considering the angle between distinct gradients, aiding in the dynamical determination of the optimization step-size for adaptive fine-tuning.
+我们的贡献有三个方面：（1）我们重新思考了现有TTA方法中的优化过程，并提出了GraTa来改进优化方向和步长；（2）我们对齐了伪梯度和辅助梯度（二者针对不同目标），以减少其任务特定组件的分歧，从而改善优化方向；（3）我们设计了一种考虑不同梯度之间夹角的可变学习率，有助于动态确定自适应微调的优化步长。
 
-1. 我们重新审视现有 TTA 方法的优化过程，提出 GraTa 来改进优化方向与步长。
-    
-2. 通过对齐伪梯度与辅助梯度，减少其任务相关分量的偏差，从而改善优化方向。
-    
-3. 设计基于梯度余弦相似度的动态学习率，实现对优化步长的动态调整，促进更加稳健的测试时自适应。
-    
-
----
-
-要不要我帮你把 **另一篇 SPCL 融合 GIALR 的论文（ICASSP 模板那篇）** 的 Introduction 也翻译成中文，这样你就能对比两篇的写作风格？
 
 # Related Work
 
