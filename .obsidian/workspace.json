@@ -158,9 +158,19 @@
               "icon": "lucide-tags",
               "title": "标签"
             }
+          },
+          {
+            "id": "a81c83bffd9474e6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -178,7 +188,8 @@
       "markdown-importer:打开 Markdown 格式转换器": false,
       "zk-prefixer:创建时间戳笔记": false,
       "github-sync:Sync with Remote": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "ef8c2b6e7f06456f",

@@ -1,8 +1,7 @@
 [
   "github-sync",
-  "dataview",
   "obsidian-excalidraw-plugin",
   "better-word-count",
-  "execute-code",
-  "file-explorer-note-count"
+  "file-explorer-note-count",
+  "obsidian-git"
 ]
