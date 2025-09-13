@@ -185,6 +185,22 @@ For all baseline methods, hyperparameters follow the default configurations repo
 
 ### Parameter Analysis
 我现在正在进行我们的参数分析实验,实验的要求是通过对
+SPCL权重 (0.5, 1.0, 1.5, 2.0)：语义原型对比损失的权重
+原型动量 (0.7, 0.9, 0.95)：原型记忆库的更新动量
+GIALR权重组合：方向权重 vs 幅值权重 (0.1,0.9), (0.3,0.7), (0.5,0.5), (0.7,0.3), (0.9,0.1)
+三个参数进行灵敏度分析,生成的是各个域对应TTA测试以后对其他域的dsc值的平均值的折线图,一共5个域,REFUGE_Valid
+RIM_ONE_r3
+REFUGE
+ORIGA
+和Drishti_GS,生成的可视化图只需要一张
+
+### 2. 伪标签筛选参数 (pseudo_label_sensitivity.py)
+
+测试伪标签筛选的关键参数：
+
+- 绝对阈值 (0.02, 0.05, 0.08, 0.1)：OD/OC的绝对概率阈值
+
+- 分位数阈值 (0.4, 0.6, 0.7, 0.8)：自适应分位数选择
 
 
 
