@@ -192,7 +192,18 @@ GIALR权重组合：方向权重 vs 幅值权重 (0.1,0.9), (0.3,0.7), (0.5,0.5)
 RIM_ONE_r3
 REFUGE
 ORIGA
-和Drishti_GS,生成的可视化图只需要一张
+和Drishti_GS,生成的可视化图只需要一张折线图,其中各个折现是各个域对应TTA测试以后对其他域的dsc值的平均值,折线图中各个数据点对应的图例你可以参考这样的风格
+    styles = {
+
+        "Information": {"color": "#8B0000", "marker": "o", "linestyle": "--"},   # dark red circle
+
+        "Clustering":  {"color": "#2E8B57", "marker": "s", "linestyle": "--"},   # green square
+
+        "Classification": {"color": "#1f77b4", "marker": "^", "linestyle": "--"},# blue triangle
+
+        "Overall":     {"color": "#ff8c00", "marker": "*", "linestyle": "--"},   # orange star
+
+  }
 
 ### 2. 伪标签筛选参数 (pseudo_label_sensitivity.py)
 
