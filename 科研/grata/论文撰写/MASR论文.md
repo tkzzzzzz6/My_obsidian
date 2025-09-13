@@ -202,10 +202,8 @@ segmentation performance under domain shift.
 
 
 # Conclusion
-We presented MASR, a source-free test-time adaptation framework that jointly stabilizes optimization and enhances semantic discrimination for medical image segmentation. By coupling a Gradient-Informed Adaptive Learning Rate (GIALR) with a lightweight semantic pixel-wise contrastive regularizer driven by a dynamic prototype memory bank, MASR achieves robust and efficient per-image adaptation without accessing source data. Extensive experiments on five cross-domain fundus benchmarks show consistent gains over strong TTA baselines, and ablations confirm the complementary benefits of magnitude-aware step-size control and semantic regularization. 
-我们提出了MASR，这是一种无源测试时自适应框架，它能联合稳定优化过程并增强医学图像分割的语义辨别能力。通过将梯度感知自适应学习率（GIALR）与由动态原型记忆库驱动的轻量级语义像素级对比正则化器相结合，MASR无需访问源数据就能实现稳健且高效的单图像自适应,将DSC提高了...个百分点。在五个跨域眼底基准数据集上进行的大量实验表明，与其他强大的测试时自适应（TTA）基线方法相比，...为模型提供了...,解决了...问题。
-
-在本文中，我们针对单点监督红外小目标检测中伪标签错误累积这一关键问题，提出了一种新颖的反思学习范式。我们的方法通过记忆增强框架实现了这一范式，该框架从过往经验中构建"联想"视角，并通过"双视角自验证"机制来净化伪标签。大量实验证明了我们方法的优越性，与最先进的基线方法相比，我们的方法将nIoU提升了超过8.5个百分点，并将虚警率降低了高达69%。最终，我们的工作表明，通过内部自验证为模型赋予反思能力，为缓解高不确定性、弱监督学习任务中的错误漂移提供了一条稳健的途径。
+We proposed **MASR**, a source-free test-time adaptation framework that jointly stabilizes optimization and enhances semantic discrimination for medical image segmentation. By integrating a **Gradient-Informed Adaptive Learning Rate (GIALR)** with a lightweight semantic pixel-wise contrastive regularizer driven by a **dynamic prototype memory bank**, MASR achieves robust and efficient per-image adaptation without accessing source data. Across five cross-domain fundus benchmarks, MASR consistently delivers the best DSC performance, with particularly notable gains on the **Drishti-GS dataset (+1.75 over the best baseline)**, while maintaining stable advantages on the remaining datasets. These results highlight that MASR not only mitigates the impact of pseudo-label noise but also dynamically modulates the learning rate, thereby ensuring a more stable adaptation process and stronger pixel-level semantic constraints under domain shift.
+我们提出了 **MASR**，这是一种无源测试时自适应框架，能够联合稳定优化过程并增强医学图像分割的语义辨别能力。通过将 **梯度感知自适应学习率（GIALR）** 与由 **动态原型记忆库** 驱动的轻量级语义像素级对比正则化器相结合，MASR 在无需访问源数据的情况下即可实现稳健且高效的单图像自适应。在五个跨域眼底基准数据集上，MASR 在所有任务中均取得了最优的 DSC 表现，特别是在 **Drishti-GS 数据集上相较最佳基线提升了 +1.75**，并在其他数据集上也保持了稳定优势。这充分表明，MASR 不仅能够有效缓解伪标签噪声的干扰，还能动态调节学习率，从而提供更加稳健的优化过程和更强的像素级语义约束。
 
 # 提示词
 
