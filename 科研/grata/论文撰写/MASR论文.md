@@ -175,7 +175,7 @@ For all baseline methods, hyperparameters follow the default configurations repo
 
 ## Performance Analysis
 
-
+Table~\ref{tab:DSC} reports the quantitative comparison across five target domains. Overall, MASR consistently outperforms the “No Adapt” baseline and all competing TTA methods, achieving the highest average DSC of \textbf{75.28}. Notably, MASR surpasses the strong gradient alignment method GraTa by a clear margin of +0.91% on average, with particularly pronounced gains on challenging domains such as REFUGE-Val/Test (+1.16%). These improvements verify that our integration of semantic regularization and gradient magnitude control yields more stable and effective adaptation, offering both robustness and superior segmentation quality under domain shift.
 ### Performance Results
 
 ### Ablation Study
