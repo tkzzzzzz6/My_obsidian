@@ -176,12 +176,15 @@ For all baseline methods, hyperparameters follow the default configurations repo
 ## Performance Analysis
 
 
-表~\ref{tab:DSC}报告了在五个目标领域的定量比较结果。总体而言，MASR始终优于“无适应”基线和所有竞争的TTA方法，取得了75.28的最高平均DSC。总体来看，MASR在平均水平上以+0.91%的优势超过了强大的梯度对齐方法GraTa，在REFUGE-Val/Test域上的增益最为显著（+1.16%）。这些改进证实，我们对语义正则化和梯度幅度控制的整合带来了更稳定且更有效的适应，在领域偏移情况下既提供了鲁棒性，又实现了更优的分割质量。
+
 ### Performance Results
+
+表~\ref{tab:DSC}报告了在五个目标领域的定量比较结果。总体而言，MASR始终优于“无适应”基线和所有竞争的TTA方法，取得了75.28的最高平均DSC。总体来看，MASR在平均水平上以+0.91%的优势超过了强大的梯度对齐方法GraTa，在REFUGE-Val/Test域上的增益最为显著（+1.16%）。这些改进证实，我们对语义正则化和梯度幅度控制的整合带来了更稳定且更有效的适应，在领域偏移情况下既提供了鲁棒性，又实现了更优的分割质量。
 
 ### Ablation Study
 
 ### Parameter Analysis
+我现在正在进行我们的参数分析实验,实验的要求是通过对
 
 
 
