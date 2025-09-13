@@ -179,7 +179,13 @@ For all baseline methods, hyperparameters follow the default configurations repo
 
 ### Performance Results
 
-表~\ref{tab:DSC}报告了在五个目标领域的定量比较结果。总体而言，MASR始终优于“无适应”基线和所有竞争的TTA方法，取得了75.28的最高平均DSC。总体来看，MASR在平均水平上以+0.91%的优势超过了强大的梯度对齐方法GraTa，在REFUGE-Val/Test域上的增益最为显著（+1.16%）。这些改进证实，我们对语义正则化和梯度幅度控制的整合带来了更稳定且更有效的适应，在领域偏移情况下既提供了鲁棒性，又实现了更优的分割质量。
+Table~\ref{tab:cross_domain_results} presents the cross-domain segmentation results on five fundus datasets. 
+Overall, MASR consistently achieves the best Dice scores across all tasks, with an average of \textbf{75.28}, 
+surpassing all advanced baselines. Notably, the improvement is most pronounced on Drishti-GS, where MASR 
+achieves a gain of +1.75. These results demonstrate that incorporating gradient magnitude stability and 
+semantic regularization effectively enhances the stability of the adaptation process and yields robust 
+segmentation performance under domain shift.
+表\ref{tab:cross_domain_results}展示了在五个眼底数据集上的跨域分割结果。总体而言，MASR在所有任务中始终取得最佳的Dice分数，平均为\textbf{75.28}，超过了所有先进的基线模型。值得注意的是，在Drishti-GS数据集上的改进最为显著，MASR实现了+1.75的提升。这些结果表明，结合梯度幅度稳定性和语义正则化能够有效增强适应过程的稳定性，并在域偏移情况下产生稳健的分割性能。
 
 ### Ablation Study
 
@@ -195,7 +201,11 @@ For all baseline methods, hyperparameters follow the default configurations repo
 - 分位数阈值 (0.4, 0.6, 0.7, 0.8)：自适应分位数选择
 
 
+# Conclusion
+We presented MASR, a source-free test-time adaptation framework that jointly stabilizes optimization and enhances semantic discrimination for medical image segmentation. By coupling a Gradient-Informed Adaptive Learning Rate (GIALR) with a lightweight semantic pixel-wise contrastive regularizer driven by a dynamic prototype memory bank, MASR achieves robust and efficient per-image adaptation without accessing source data. Extensive experiments on five cross-domain fundus benchmarks show consistent gains over strong TTA baselines, and ablations confirm the complementary benefits of magnitude-aware step-size control and semantic regularization. 
+我们提出了MASR，这是一种无源测试时自适应框架，它能联合稳定优化过程并增强医学图像分割的语义辨别能力。通过将梯度感知自适应学习率（GIALR）与由动态原型记忆库驱动的轻量级语义像素级对比正则化器相结合，MASR无需访问源数据就能实现稳健且高效的单图像自适应,将DSC提高了...个百分点。在五个跨域眼底基准数据集上进行的大量实验表明，与其他强大的测试时自适应（TTA）基线方法相比，...为模型提供了...,解决了...问题。
 
+在本文中，我们针对单点监督红外小目标检测中伪标签错误累积这一关键问题，提出了一种新颖的反思学习范式。我们的方法通过记忆增强框架实现了这一范式，该框架从过往经验中构建"联想"视角，并通过"双视角自验证"机制来净化伪标签。大量实验证明了我们方法的优越性，与最先进的基线方法相比，我们的方法将nIoU提升了超过8.5个百分点，并将虚警率降低了高达69%。最终，我们的工作表明，通过内部自验证为模型赋予反思能力，为缓解高不确定性、弱监督学习任务中的错误漂移提供了一条稳健的途径。
 
 # 提示词
 
