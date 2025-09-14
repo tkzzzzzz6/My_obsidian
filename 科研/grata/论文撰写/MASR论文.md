@@ -189,6 +189,9 @@ segmentation performance under domain shift.
 
 ### Ablation Study
 
+表~\ref{tab:ablation} 给出了 MASR 的消融实验结果。以 GraTa 作为基线，我们逐步引入语义像素级对比损失（SPCL）以及梯度感知自适应学习率（GIALR）。结果表明，在基线中加入 SPCL（无论作为辅助损失还是伪监督损失的一部分）均能够提升特征的可分辨性并带来稳定的性能增益；进一步引入 GIALR 则通过自适应调节步长有效增强了优化过程的稳定性。当两者结合时，MASR 的平均 DSC 达到 75.28，说明语义正则化与梯度幅值控制具有互补优势，共同推动了模型在跨域分割任务中的最佳表现。
+
+
 ### Parameter Analysis
 
 
