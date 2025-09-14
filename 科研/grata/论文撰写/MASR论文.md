@@ -1,5 +1,6 @@
 第一段：这个任务的意义，比如空间多组学相较于单细胞等任务的优势。 第二段：这个问题的描述，常见的解决方案，等。这一段开始谭课就有点冗余了
 
+
 # Introduction
 
 帮我撰写我们论文的introduction部分呢,总体分为5段
@@ -39,6 +40,13 @@ In recent years, \textbf{test-time adaptation (TTA)} has emerged as an effective
 
 # Method
 背景 → 输入/输出定义 → 数学公式化 → 下游应用价值
+![[Pasted image 20250914095521.png]]
+- 完整版:
+\caption{梯度感知自适应学习率（GIALR。(a) 仅依赖伪标签损失 ($\mathcal{L}_{pse}$) 的朴素优化可能产生较大的偏差，并偏离经验梯度 ($\mathcal{L}_{emp}$)。 (b) 原始 GraTa 方法通过对齐辅助损失 ($\nabla\mathcal{L}_{pse}(\theta)$) 与伪标签损失 ($\mathcal{L}_{pse}$) 的梯度来校正更新方向。 (c) 然而，即使有方向对齐，GraTa 仍可能出现梯度幅值爆炸 ($\nabla_t$)，导致训练不稳定。(Ours) 我们的 GIALR 方法通过引入幅值稳定性控制解决该问题：比较当前梯度 ($\nabla_t$，青色) 与前一步梯度 ($\nabla_{t-1}$，灰色) 的范数，若检测到爆炸则自适应抑制更新步长，从而得到稳定的最终梯度 ($\nabla_{final}$，红色)，既避免了发散又保持了方向校正。}
+
+- 简化版:
+\caption{GIALR 方法示意图。(a) 朴素伪标签优化易偏离真实梯度；(b) GraTa 仅校正方向但仍存在梯度爆炸风险；(c) 我们的 GIALR 通过比较相邻梯度范数，自适应调整步长，实现稳定更新。}
+
 
 ## Problem Formulation and Preliminaries
 
