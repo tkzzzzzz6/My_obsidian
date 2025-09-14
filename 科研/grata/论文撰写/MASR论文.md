@@ -1,5 +1,6 @@
 第一段：这个任务的意义，比如空间多组学相较于单细胞等任务的优势。 第二段：这个问题的描述，常见的解决方案，等。这一段开始谭课就有点冗余了
 
+
 # Introduction
 
 帮我撰写我们论文的introduction部分呢,总体分为5段
@@ -39,6 +40,13 @@ In recent years, \textbf{test-time adaptation (TTA)} has emerged as an effective
 
 # Method
 背景 → 输入/输出定义 → 数学公式化 → 下游应用价值
+![[Pasted image 20250914095521.png]]
+- 完整版:
+\caption{梯度感知自适应学习率（GIALR。(a) 仅依赖伪标签损失 ($\mathcal{L}_{pse}$) 的朴素优化可能产生较大的偏差，并偏离经验梯度 ($\mathcal{L}_{emp}$)。 (b) 原始 GraTa 方法通过对齐辅助损失 ($\nabla\mathcal{L}_{pse}(\theta)$) 与伪标签损失 ($\mathcal{L}_{pse}$) 的梯度来校正更新方向。 (c) 然而，即使有方向对齐，GraTa 仍可能出现梯度幅值爆炸 ($\nabla_t$)，导致训练不稳定。(Ours) 我们的 GIALR 方法通过引入幅值稳定性控制解决该问题：比较当前梯度 ($\nabla_t$，青色) 与前一步梯度 ($\nabla_{t-1}$，灰色) 的范数，若检测到爆炸则自适应抑制更新步长，从而得到稳定的最终梯度 ($\nabla_{final}$，红色)，既避免了发散又保持了方向校正。}
+
+- 简化版:
+\caption{GIALR 方法示意图。(a) 朴素伪标签优化易偏离真实梯度；(b) GraTa 仅校正方向但仍存在梯度爆炸风险；(c) 我们的 GIALR 通过比较相邻梯度范数，自适应调整步长，实现稳定更新。}
+
 
 ## Problem Formulation and Preliminaries
 
@@ -176,15 +184,63 @@ For all baseline methods, hyperparameters follow the default configurations repo
 ## Performance Analysis
 
 
+
 ### Performance Results
 
+Table~\ref{tab:cross_domain_results} presents the cross-domain segmentation results on five fundus datasets. 
+Overall, MASR consistently achieves the best Dice scores across all tasks, with an average of \textbf{75.28}, 
+surpassing all advanced baselines. Notably, the improvement is most pronounced on Drishti-GS, where MASR 
+achieves a gain of +1.75. These results demonstrate that incorporating gradient magnitude stability and 
+semantic regularization effectively enhances the stability of the adaptation process and yields robust 
+segmentation performance under domain shift.
+表\ref{tab:cross_domain_results}展示了在五个眼底数据集上的跨域分割结果。总体而言，MASR在所有任务中始终取得最佳的Dice分数，平均为\textbf{75.28}，超过了所有先进的基线模型。值得注意的是，在Drishti-GS数据集上的改进最为显著，MASR实现了+1.75的提升。这些结果表明，结合梯度幅度稳定性和语义正则化能够有效增强适应过程的稳定性，并在域偏移情况下产生稳健的分割性能。
+
 ### Ablation Study
+
+表~\ref{tab:ablation} 给出了 MASR 的消融实验结果。以 GraTa 作为基线，我们逐步引入语义像素级对比损失（SPCL）以及梯度感知自适应学习率（GIALR）。结果表明，在基线中加入 SPCL（无论作为辅助损失还是伪监督损失的一部分）均能够提升特征的可分辨性并带来稳定的性能增益；进一步引入 GIALR 则通过自适应调节步长有效增强了优化过程的稳定性。当两者结合时，MASR 的平均 DSC 达到 75.28，说明语义正则化与梯度幅值控制具有互补优势，共同推动了模型在跨域分割任务中的最佳表现。
+
 
 ### Parameter Analysis
 
 
+### 2. 伪标签筛选参数 (pseudo_label_sensitivity.py)
 
+测试伪标签筛选的关键参数：
+
+- 绝对阈值 (0.02, 0.05, 0.08, 0.1)：OD/OC的绝对概率阈值
+
+- 分位数阈值 (0.4, 0.6, 0.7, 0.8)：自适应分位数选择
+
+
+# Conclusion
+We proposed **MASR**, a source-free test-time adaptation framework that jointly stabilizes optimization and enhances semantic discrimination for medical image segmentation. By integrating a **Gradient-Informed Adaptive Learning Rate (GIALR)** with a lightweight semantic pixel-wise contrastive regularizer driven by a **dynamic prototype memory bank**, MASR achieves robust and efficient per-image adaptation without accessing source data. Across five cross-domain fundus benchmarks, MASR consistently delivers the best DSC performance, with particularly notable gains on the **Drishti-GS dataset (+1.75 over the best baseline)**, while maintaining stable advantages on the remaining datasets. These results highlight that MASR not only mitigates the impact of pseudo-label noise but also dynamically modulates the learning rate, thereby ensuring a more stable adaptation process and stronger pixel-level semantic constraints under domain shift.
+我们提出了 **MASR**，这是一种无源测试时自适应框架，能够联合稳定优化过程并增强医学图像分割的语义辨别能力。通过将 **梯度感知自适应学习率（GIALR）** 与由 **动态原型记忆库** 驱动的轻量级语义像素级对比正则化器相结合，MASR 在无需访问源数据的情况下即可实现稳健且高效的单图像自适应。在五个跨域眼底基准数据集上，MASR 在所有任务中均取得了最优的 DSC 表现，特别是在 **Drishti-GS 数据集上相较最佳基线提升了 +1.75**，并在其他数据集上也保持了稳定优势。这充分表明，MASR 不仅能够有效缓解伪标签噪声的干扰，还能动态调节学习率，从而提供更加稳健的优化过程和更强的像素级语义约束。
 
 # 提示词
 
+## introduction
+
 1. 帮我将这部分内容翻译为地道的英文会议计算机论文表达,并使用latex格式提供带上典型文献引用（DOI/ArXiv）呢,文献提供bib格式,还是提供latex格式,使用\cite引用
+## parameter analysis
+```
+我现在正在进行我们的参数分析实验,实验的要求是通过对
+SPCL权重 (0.5, 1.0, 1.5, 2.0)：语义原型对比损失的权重
+原型动量 (0.7, 0.9, 0.95)：原型记忆库的更新动量
+GIALR权重组合：方向权重 vs 幅值权重 (0.1,0.9), (0.3,0.7), (0.5,0.5), (0.7,0.3), (0.9,0.1)
+三个参数进行灵敏度分析,生成的是各个域对应TTA测试以后对其他域的dsc值的平均值的折线图,一共5个域,REFUGE_Valid
+RIM_ONE_r3
+REFUGE
+ORIGA
+和Drishti_GS,生成的可视化图只需要一张折线图,其中各个折现是各个域对应TTA测试以后对其他域的dsc值的平均值,折线图中各个数据点对应的图例你可以参考这样的风格
+    styles = {
+
+        "Information": {"color": "#8B0000", "marker": "o", "linestyle": "--"},   # dark red circle
+
+        "Clustering":  {"color": "#2E8B57", "marker": "s", "linestyle": "--"},   # green square
+
+        "Classification": {"color": "#1f77b4", "marker": "^", "linestyle": "--"},# blue triangle
+
+        "Overall":     {"color": "#ff8c00", "marker": "*", "linestyle": "--"},   # orange star
+
+  }
+```
