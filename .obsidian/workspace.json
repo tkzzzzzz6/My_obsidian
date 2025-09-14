@@ -116,7 +116,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.49999618530273
+    "width": 331.5
   },
   "right": {
     "id": "1ab0588ee5b53081",
@@ -180,8 +180,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -193,13 +193,23 @@
               "icon": "bot-message-square",
               "title": "Copilot Chat"
             }
+          },
+          {
+            "id": "b1f1855c43975d97",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 329.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,9 +222,9 @@
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
       "zk-prefixer:创建时间戳笔记": false,
-      "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "82579d7fd6a7e494",
