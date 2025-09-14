@@ -115,7 +115,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.49999618530273
+    "width": 306.49999618530273,
+    "collapsed": true
   },
   "right": {
     "id": "1ab0588ee5b53081",
@@ -198,7 +199,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,10 +220,11 @@
   },
   "active": "b4fe466f5b8a69d3",
   "lastOpenFiles": [
-    "学习/计算机三级/数据库/image/计算机三级数据库",
-    "学习/计算机三级/数据库/image",
+    "学习/计算机三级/数据库/1.sh",
     "学习/计算机三级/数据库/Pasted image 20250914215315.png",
     "学习/计算机三级/数据库/计算机三级数据库.md",
+    "学习/计算机三级/数据库/image/计算机三级数据库",
+    "学习/计算机三级/数据库/image",
     "科研/grata/论文撰写/MASR论文.md",
     "学习/计算机三级/数据库",
     "学习/计算机三级/未命名.md",
@@ -238,7 +241,6 @@
     "杂项",
     "学习",
     "欢迎.md",
-    "未命名.base",
     "未命名.canvas",
     "2025-09-09.md",
     "2025-17-5-9-17.md",
