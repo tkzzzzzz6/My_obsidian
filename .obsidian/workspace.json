@@ -35,7 +35,8 @@
               "title": "论文"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,13 +103,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/grata/论文撰写/MASR论文.md",
+                "file": "科研/praga/论文.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MASR论文 的大纲"
+              "title": "论文 的大纲"
             }
           }
         ]
@@ -179,8 +180,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -204,7 +205,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -226,11 +227,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "b4fe466f5b8a69d3",
+  "active": "a81c83bffd9474e6",
   "lastOpenFiles": [
     "科研/grata/论文撰写/Pasted image 20250914095521.png",
-    "科研/praga/论文.md",
     "科研/grata/论文撰写/MASR论文.md",
+    "科研/praga/论文.md",
     "科研/grata/Gradient Alignment Improves Test-Time Adaptation for Medical Image Segmentation.md",
     "科研/grata/论文撰写",
     "科研/praga/思路.md",
