@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "科研/praga/论文撰写.md",
+                "file": "科研/空间转录组/TRSMI/原始论文/TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "论文撰写 的反向链接列表"
+              "title": "TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION 的反向链接列表"
             }
           },
           {
@@ -136,12 +136,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "科研/praga/论文撰写.md",
+                "file": "科研/空间转录组/TRSMI/原始论文/TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "论文撰写 的出链列表"
+              "title": "TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION 的出链列表"
             }
           },
           {
@@ -180,12 +180,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,6 +204,11 @@
   },
   "active": "b4fe466f5b8a69d3",
   "lastOpenFiles": [
+    "学习/计算机三级/Linux",
+    "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916183547.png",
+    "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916183539.png",
+    "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916183534.png",
+    "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916183515.png",
     "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916180935.png",
     "科研/空间转录组/TRSMI/原始论文/TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION.md",
     "科研/空间转录组/TRSMI/原始论文",
@@ -233,10 +237,6 @@
     "Pasted image 20250911202811.png",
     "Pasted image 20250911201833.png",
     "未命名.md",
-    "Pasted image 20250911201636.png",
-    "Pasted image 20250911201553.png",
-    "Pasted image 20250911201611.png",
-    "Pasted image 20250911201605.png",
     "未命名 1.canvas"
   ]
 }

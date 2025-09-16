@@ -11,7 +11,6 @@ Nevertheless, current approaches exhibit recurring limitations. Spatial structur
 ![[Pasted image 20250916180935.png]]
 
 To address these challenges, we present \textbf{TRSMI}, a simple and scalable framework for robust spatial multi-omics integration. TRSMI combines (i) a \emph{near-identity} projection–residual–propagation encoder (zero-initialized enhancement with row-wise $\ell_2$ normalization) for stable, boundary-preserving representations; (ii) \emph{temperature-controlled} soft cross-graph alignment with a short warm-up detach to prevent early misalignment; and (iii) \emph{multi-scale} APPNP diffusion with a \emph{time-scheduled} global-to-local gate that first enforces global coherence and then sharpens local structure. A lightweight MLP fuses modality-specific embeddings, graph decoders maintain modality faithfulness, a prototype-aware contrastive objective compacts clusters, and a mild EMA regularizer stabilizes learned feature graphs. Collectively, these choices yield stable alignment that respects spatial geometry and cross-modal coupling, multi-scale diffusion that mitigates over-smoothing with $O(E d)$ propagation while sparsifying correspondences to limit $O(N^2)$ cost, and an interpretable, modality-faithful fusion via joint reconstruction and clustering. Across three public benchmarks, TRSMI achieves state-of-the-art performance on boundary-sensitive and information-theoretic metrics.
-
 ## Method
 
 ### Problem Formulation and Preliminaries
@@ -30,7 +29,6 @@ $$\begin{equation}
 \end{equation}$$
 \textbf{RPR encoder.}Motivated by CED’s conservative near-identity design~\cite{zhang2023CEDNetCascadeEncoderdecoder}, we adopt a one-layer graph encoder with a zero-initialized enhancement branch and a small learnable gate $\alpha$:
 $$\begin{equation}
-\label{eq:encoder}
 \begin{aligned}
 Z^{m} &= \mathrm{GCN}_e^{m}(F^{m},\hat{A}^{m})\\ 
 &= \hat{A}^{m}\!\left(F^{m}W_e^{m} + \alpha\,\Delta(F^{m}W_e^{m})\right),\\
@@ -42,7 +40,6 @@ where $\Delta(\cdot)$ is a zero-initialized linear branch. Row-wise $\ell_2$ nor
 ### Cross-Graph Alignment and Multi-Scale Diffusion
 Given two modality-specific encodings $Z^{1},Z^{2}\in\mathbb{R}^{N\times d}$ from Eq.~\eqref{eq:encoder}, we compute temperature-controlled soft correspondences. Let
 $$\begin{equation}
-\label{eq:cross_align}
 \begin{aligned}
 & Q = \mathrm{norm}(Z^{1}W_q),\\
 & K=\mathrm{norm}(Z^{2}W_k),\\
@@ -51,7 +48,6 @@ $$\begin{equation}
 \end{equation}$$
 where $W_q,W_k\in\mathbb{R}^{d\times d_a}$ and the softmax is row-wise. During a short warm-up, cross terms are detached (when updating $Z^1$ we use $Z^2\!\texttt{.detach()}$, and vice versa) to avoid unstable early alignments. We then augment each modality with its aligned counterpart and project back:
 $$\begin{equation}
-\label{eq:aligned_feats}
 \widetilde{Z}^{1} = \big[\,Z^{1}\,\Vert\, SZ^{2}\,\big]W_{1},\qquad
 \widetilde{Z}^{2} = \big[\,Z^{2}\,\Vert\, S^\top Z^{1}\,\big]W_{2},
 \end{equation}$$
@@ -67,7 +63,6 @@ where $Z_{\mathrm{base}}$ stacks $\widetilde{Z}^{1}$ and $\widetilde{Z}^{2}$ aft
 \textbf{Multi-scale APPNP diffusion.}
 To preserve global cluster geometry while denoising, we fuse modality graphs to obtain $\widehat{A}_{g}$ (averaging and renormalization) and apply a multi-scale APPNP operator:
 $$\begin{equation}
-\label{eq:ms_appnp}
 Z_{g} = \mathrm{MS\text{-}APPNP}(\widehat{A}_{g}, Z_{\mathrm{loc}}),
 \end{equation}$$
 where multiple APPNP propagations with different $(K,\alpha)$ are concatenated and linearly projected back to $d$.
@@ -75,7 +70,6 @@ where multiple APPNP propagations with different $(K,\alpha)$ are concatenated a
 \textbf{Time-scheduled global/local balance.}
 We combine local and global features with a learnable gate $\beta$ that is monotonically cooled during training:
 $$\begin{equation}
-\label{eq:gate_balance}
 Z_{\ast} = (1-\beta)\,Z_{\mathrm{loc}} + \beta\,Z_{g},\qquad 0\le\beta\le 1.
 \end{equation}$$
 Early iterations favor global structure (larger $\beta$), and later iterations progressively refine local boundaries as $\beta$ decreases.
@@ -85,7 +79,6 @@ Early iterations favor global structure (larger $\beta$), and later iterations p
 
 We fuse modality-specific encodings via a small MLP:
 $$\begin{equation}
-\label{eq:fusion_mlp}
 Z = \mathrm{MLP}\big(\mathrm{Concat}(Z^{1},\ldots,Z^{M})\big)\in\mathbb{R}^{N\times d}.
 \end{equation}$$
 To maintain modality faithfulness and spatial smoothness, we decode $Z$ back to each modality using the spatial graph $A_S$:
@@ -95,13 +88,11 @@ To maintain modality faithfulness and spatial smoothness, we decode $Z$ back to 
 \end{equation}
 The reconstruction loss averages modality-wise MSE (with optional weights $w^{m}$):
 $$\begin{equation}
-\label{eq:l_rec}
 \mathcal{L}_{\mathrm{rec}} = \frac{1}{M}\sum_{m=1}^{M} w^{m}\,\|F^{m}-\widehat{F}^{m}\|_{2}^{2}.
 \end{equation}$$
 
 Let $C=\{c_k\}_{k=1}^{K}$ be learnable prototypes (initialized by split-and-merge seeding over $Z$). With temperature $\tau_c$, a prototype-aware contrastive objective compacts clusters while resisting class imbalance:
 $$\begin{equation}
-\label{eq:l_clust}
 \mathcal{L}_{\mathrm{clust}} = \frac{1}{K}\sum_{k=1}^{K}
 \left[-\log\frac{\mathbb{E}_{i\in\mathcal{I}_k}\exp(\langle z_i,c_k\rangle/\tau_c)}
 {\mathbb{E}_{j}\exp(\langle z_j,c_k\rangle/\tau_c)}\right],
@@ -110,11 +101,90 @@ where $z_i$ is the $i$-th row of $Z$ and $\mathcal{I}_{k}$ are indices currently
 
 To stabilize training and improve interpretability, we regularize the learned feature graphs toward an exponential-moving-average (EMA) reference:
 $$\begin{equation}
-\label{eq:l_graph}
 \mathcal{L}_{\mathrm{graph}}=\sum_{m=1}^{M}\big\|A_F^{m}-\mathrm{EMA}(A_F^{m})\big\|_{F}^{2}.
 \end{equation}$$
 The full objective is
 $$\begin{equation}
-\label{eq:l_total}
 \mathcal{L} = \mathcal{L}_{\mathrm{rec}} + \lambda_{\mathrm{cl}}\,\mathcal{L}_{\mathrm{clust}} + \lambda_{\mathrm{g}}\,\mathcal{L}_{\mathrm{graph}}.
 \end{equation}$$
+## Experiments
+![[Pasted image 20250916183515.png]]
+  
+![[Pasted image 20250916183534.png]]
+PRAGA vs. TRSMI on MB (spatial maps and UMAPs). TRSMI shows clearer boundaries and compact clusters.
+![[Pasted image 20250916183539.png]]![[Pasted image 20250916183547.png]]
+
+ 
+
+
+We evaluate on three publicly available datasets spanning real tissues and a controlled simulation.
+\textbf{Human Lymph Node (HLN).}
+The HLN dataset~\cite{Long2024SpatialGlue} provides paired RNA, ADT, and spatial coordinates for \mbox{3,484} spots with expert cell-type annotations.
+\textbf{Mouse Brain (MB).}
+The MB dataset~\cite{zhang2023spatial} integrates ATAC–RNA and CUT\&Tag–RNA profiles from postnatal day 22 mouse brain, totaling \mbox{9,196} spatial spots. In the absence of ground-truth labels, we assess performance via cross-modal clustering consistency between RNA and ATAC.
+\textbf{Simulation (Sim).}
+The synthetic benchmark~\cite{Long2024SpatialGlue} contains simulated RNA, ATAC, and ADT modalities with \mbox{1,296} spatially annotated spots, enabling controlled evaluation of multimodal integration under known ground truth.
+
+We report averaged metrics: \emph{Info-Avg} = (MI, NMI, AMI)/3, \emph{Clust-Avg} = (FMI, ARI, V-Measure)/3, 
+and \emph{Class-Avg} = (F1, Jaccard, Completeness)/3, with the overall score defined as \emph{Overall-Avg} = (Info-Avg + Clust-Avg + Class-Avg)/3. All metrics follow prior work~\cite{huang2024pragaprototypeawaregraphadaptive}.
+
+\subsection{Baseline Methods and Setup}
+We compare our method with several representative methods, including MOFA+\cite{Argelaguet2020mofa+}, CiteFuse\cite{kim2020citefuse}, SpatialGlue\cite{Long2024SpatialGlue}, STAGATE\cite{Dong2022stagate}, and PRAGA\cite{huang2024pragaprototypeawaregraphadaptive}.
+
+All models are trained on an NVIDIA RTX~3090 GPU with full-batch SGD, using learning rates of 0.01 for dual-modality and 0.001 for tri-modality tasks. Baseline methods follow their official default hyperparameters whenever available. RNA features are preprocessed with Scanpy (gene filtering, HVG selection, normalization, scaling), while ADT features are CLR-normalized. Graphs are constructed with neighborhood sizes $k=10/20$, and multi-scale diffusion is applied with $(K,\alpha)=\{(2,0.20),(4,0.15),(8,0.10)\}$. We employ an adaptively learned global gate (no fixed $\beta_0$) and a composite loss with hyperparameters $\alpha=0.9$, $w_{\text{cl}}=1$, $w_{\scriptstyle RNA}=5$, $w_{\scriptstyle ADT}=5$, and temperature $\tau=2$. 
+% Exact replication may be non-trivial, as several baseline implementations are not fully open-sourced and preprocessing pipelines vary across datasets.
+
+\subsection{Performance Analysis}
+
+% As shown in Table~\ref{tab:all_avg}, TRSMI consistently outperforms baselines, with the largest gain on \textbf{MB} (+6.40 Overall-Avg) and stable improvements on \textbf{HLN} (+0.23) and \textbf{Simulation} (+0.52). 
+% In addition, Fig.~\ref{fig:visualization_mb} qualitatively confirms these gains, with TRSMI producing clearer clusters and sharper boundaries than PRAGA.
+
+As shown in Table~\ref{tab:all_avg}, \textbf{TRSMI} achieves the best Overall-Avg on all datasets, with the largest margin on \textbf{MB} (+6.40) and stable gains on \textbf{HLN} (+0.23) and \textbf{Sim} (+0.52). The MB result—evaluated via RNA--ATAC consistency—indicates superior cross-modal reconciliation while preserving spatial topology; the HLN gain suggests robustness to modality imbalance (low-dimensional ADT); and on Sim, TRSMI better recovers ground-truth spatial domains. 
+
+Across metrics, TRSMI improves both information-theoretic scores (MI/NMI/AMI) and boundary-sensitive measures (F1/Jaccard), reflecting enhanced global structure and sharper local delineation. Qualitative maps in Fig.~\ref{fig:visualization_mb} corroborate these trends, showing clearer clusters and cleaner boundaries than PRAGA—attributable to near-identity RPR encoding, temperature-controlled warm-up alignment, and multi-scale APPNP with scheduled gating.
+
+
+\subsubsection{Ablation Study}
+
+% condensed version
+% On MB, we ablate RPR, cross-graph alignment, multi-scale diffusion, and scheduled gating (Table~\ref{tab:ablation}). Each component yields incremental gains, while the full model achieves the best overall performance, confirming their complementary effects.
+
+We conduct an ablation study on the MB dataset to evaluate the contributions of different components in our TRSMI framework (Table~\ref{tab:ablation}). The examined modules include RPR (row-propagation encoder), Align (cross-graph alignment), MS-APPNP (multi-scale diffusion), and Sched-$\beta$ (scheduled gating).While enabling a single component yields noticeable improvements over the baseline, the gains remain limited. In contrast, combining all modules delivers the best overall performance, confirming that global diffusion, cross-modal alignment, and scheduled gating complement each other in enhancing structure-preserving and boundary-sensitive metrics.
+
+\begin{table}[h]
+\centering
+\small
+\caption{Ablation on MB. \ding{52} enabled, \ding{56} disabled.}
+\label{tab:ablation}
+% Avg. denotes Overall-Avg with equal weights across Info-/Clust-/Class-Avg.
+ % RPR: row-propagation encoder; Align: cross-graph alignment; MS-APPNP: multi-scale diffusion; Sched-$\beta$: scheduled global gate.
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l|cccc|c}
+\toprule
+model & RPR & Align & MS-APPNP & Sched-$\beta$ & Avg. \\
+\midrule
+Baseline    & \ding{56} & \ding{56} & \ding{56} & \ding{56} & 44.11 \\
+& \ding{52} & \ding{56} & \ding{56} & \ding{56} & 45.46 \\
+& \ding{56} & \ding{52} & \ding{56} & \ding{56} & 49.94 \\
+& \ding{56} & \ding{56} & \ding{52} & \ding{56} & 48.92 \\
+& \ding{56} & \ding{56} & \ding{56} & \ding{52} & 48.70 \\
+\midrule
+TRSMI (Ours)        & \ding{52} & \ding{52} & \ding{52} & \ding{52} & 50.51 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Parameter Analysis}
+We analyze three hyperparameters on HLN: $\alpha_1$ (diffusion at $K{=}2$), $\alpha_2$ (diffusion at $K{=}4$), and $\beta_0$ (initial global gate). We sweep $\alpha_1\in[0.10,0.20]$, $\alpha_2\in[0.05,0.10]$, and $\beta_0\in[1.5,2.5]$ with 10 evenly spaced points each, keeping other settings fixed. As shown in Fig.~\ref{fig:param_analysis} (top-left: $\alpha_1$, top-right: $\alpha_2$, bottom-left: $\beta_0$), performance is generally stable across these ranges; the best Overall appears at moderate diffusion strengths and mid-range $\beta_0$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\linewidth]{LaTex/figure/parameter_analysis.png}
+  \caption{Parameter analysis on HLN. Top-left/Top-right/Bottom-left: Overall vs. $\alpha_1$ ($K{=}2$), $\alpha_2$ ($K{=}4$), and $\beta_0$, respectively.}
+  \label{fig:param_analysis}
+\end{figure}
+
+
+
+
+
