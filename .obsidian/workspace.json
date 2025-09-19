@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4fe466f5b8a69d3",
+            "id": "82b5730390699b3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,18 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "linux题库2"
-            }
-          },
-          {
-            "id": "82b5730390699b3c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-09-19 10.33.03.excalidraw"
             }
           }
         ]
@@ -66,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#excalidraw",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -215,9 +203,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b4fe466f5b8a69d3",
+  "active": "82b5730390699b3c",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md",
+    "学习/计算机三级/Linux/未命名.base",
     "学习/计算机三级/Linux/linux题库2.md",
     "Excalidraw",
     "学习/计算机三级/Linux/1758208395025_d.png",
@@ -245,7 +234,6 @@
     "学习/计算机三级/数据库/1.sh",
     "学习/计算机三级/数据库/Pasted image 20250914215315.png",
     "学习/计算机三级/数据库/image/计算机三级数据库",
-    "学习/计算机三级/数据库/image",
     "科研/grata/论文撰写/MASR论文.md",
     "学习/计算机三级/未命名.md",
     "科研/grata/论文撰写/Pasted image 20250914095521.png",
