@@ -100,13 +100,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/课程学习/数据库技术/第一次作业/第一次作业.md",
+                "file": "未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "第一次作业 的大纲"
+              "title": "未命名 的大纲"
             }
           }
         ]
@@ -215,10 +215,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "82b5730390699b3c",
+  "active": "ef8c2b6e7f06456f",
   "lastOpenFiles": [
-    "学习/计算机三级/Linux/linux题库2/linux题库2.md",
+    "未命名.md",
     "学习/课程学习/数据库技术/第一次作业/第一次作业.md",
+    "学习/计算机三级/Linux/linux题库2/linux题库2.md",
     "学习/课程学习/数据库技术/第一次作业/第一次作业",
     "学习/课程学习/数据库技术/第一次作业",
     "学习/课程学习/数据库技术",
@@ -263,7 +264,6 @@
     "欢迎.md",
     "未命名.canvas",
     "2025-09-09.md",
-    "2025-17-5-9-17.md",
     "未命名 1.canvas"
   ]
 }
