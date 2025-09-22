@@ -100,13 +100,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md",
+                "file": "学习/课程学习/数据库技术/第一次作业/第一次作业.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "第一次作业 的大纲"
             }
           }
         ]
@@ -215,7 +215,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef8c2b6e7f06456f",
+  "active": "82b5730390699b3c",
   "lastOpenFiles": [
     "未命名.md",
     "学习/课程学习/数据库技术/第一次作业/第一次作业.md",
