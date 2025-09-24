@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "杂项/电脑环境配置/adobe 盗版alert删除.md",
+                "file": "学习/小挑/大模型微调/禽类大模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "adobe 盗版alert删除"
+              "title": "禽类大模型"
             }
           }
         ]
@@ -88,13 +88,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "杂项/电脑环境配置/adobe 盗版alert删除.md",
+                "file": "学习/小挑/大模型微调/禽类大模型.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "adobe 盗版alert删除 的大纲"
+              "title": "禽类大模型 的大纲"
             }
           }
         ]
@@ -205,15 +205,17 @@
   },
   "active": "82b5730390699b3c",
   "lastOpenFiles": [
-    "2025-19-3-9-19.md",
-    "杂项/电脑环境配置/adobe 盗版alert删除.md",
     "学习/小挑/大模型微调/LaMMa-factory模型微调与环境配置.md",
     "学习/小挑/大模型微调/deepseek模型微调.md",
-    "杂项/电脑环境配置/windows电脑实现我现在连接无线网络,当我的手机热点一打开就使用手机热点.md",
-    "Excalidraw/Drawing 2025-09-19 14.53.08.excalidraw.md",
-    "杂项/电脑环境配置",
     "学习/小挑/大模型微调/整体技术框架.md",
+    "学习/小挑/大模型微调/数据集.md",
     "学习/小挑/大模型微调/禽类大模型.md",
+    "Excalidraw/Drawing 2025-09-19 14.53.08.excalidraw.md",
+    "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md",
+    "杂项/电脑环境配置/windows电脑实现我现在连接无线网络,当我的手机热点一打开就使用手机热点.md",
+    "杂项/电脑环境配置/Adobe 盗版alert删除.md",
+    "2025-19-3-9-19.md",
+    "杂项/电脑环境配置",
     "学习/课程学习/数据库技术/第一次作业/第一次作业.md",
     "未命名.md",
     "学习/计算机三级/Linux/linux题库2/linux题库2.md",
@@ -233,7 +235,6 @@
     "学习/计算机三级/数据库/数据库题库1.md",
     "学习/计算机三级/Linux/linux题库2/1758208395025_d.png",
     "学习/计算机三级/数据库/章节练习/第1章数据库应用系统开发方法/第1章数据库应用系统开发方法.md",
-    "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md",
     "科研/VLM/benchmark.md",
     "科研/VLM/2d400a42e69aef4fd516c922cfa5357d.png",
     "科研/空间转录组/TRSMI/AAAI AI审稿提示词.md",
@@ -248,7 +249,6 @@
     "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916183515.png",
     "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916180935.png",
     "科研/空间转录组/TRSMI/论文.md",
-    "学习/计算机三级/数据库/计算机三级数据库.md",
     "学习/计算机三级/数据库/Pasted image 20250914215315.png",
     "科研/grata/论文撰写/Pasted image 20250914095521.png",
     "未命名.canvas",
