@@ -18,6 +18,7 @@ deepseek-r1模型位置: /mnt/workspace/huggingface/hub/models--deepseek-ai--Dee
 pip install --upgrade huggingface_hub
 huggingface-cli login
 ```
+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
 
 环境
 ## Requirement
