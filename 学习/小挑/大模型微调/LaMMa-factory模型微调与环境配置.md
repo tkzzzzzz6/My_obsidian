@@ -175,3 +175,7 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 ```
 
 ---
+# 导出路径
+/mnt/workspace/LLaMA-Factory/merge
+modelscope upload tkzzzzzz6/AgriDuck-Qwen2.5-3B ./qwen3b --token ms-788218b4-120b-49b4-b089-1625c804ccd9
+modelscope upload tkzzzzzz6/AgriDuck-Qwen2.5-1.5B ./qwen1.5b --token ms-788218b4-120b-49b4-b089-1625c804ccd9

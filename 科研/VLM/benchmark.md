@@ -1,3 +1,4 @@
+关于VLM的模型在图表方向的benchmark
 比如将任务划分成折线图/t-sne/可视化图等多个任务
 按照几个subtask去做
 level 1:多图判断好坏，A,B,C,D
@@ -7,7 +8,7 @@ level 3：多图做阅读理解，GT参照论文，至于是不是ABCD再讨论�
 围绕的点就是当前VLM的机制，比如可能只关注几个重点，尤其是图像，而不能看到全局其他非重要问题，
 https://scholar.google.com/citations?user=ln4hmCwAAAAJ&hl=en
 关于VLM的模型在图表方向的benchmark
-![[2d400a42e69aef4fd516c922cfa5357d.png]]
+![2d400a42e69aef4fd516c922cfa5357d.png](http://t2z9ig7uo.hn-bkt.clouddn.com/blog/2d400a42e69aef4fd516c922cfa5357d.png)
 文生图：https://arxiv.org/abs/2503.07265
 Reasoning: https://arxiv.org/abs/2505.14552
 General Knowledge: https://www.arxiv.org/abs/2502.14739
