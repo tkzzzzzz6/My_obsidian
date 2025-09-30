@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6d4312ac8aa22523",
+        "id": "d5e2e248cb7a4097",
         "type": "tabs",
         "children": [
           {
-            "id": "82b5730390699b3c",
+            "id": "1d300979c25a35ae",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "科研/VLM/benchmark.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "benchmark"
             }
           }
         ]
@@ -84,12 +88,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "科研/VLM/benchmark.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "benchmark 的大纲"
             }
           }
         ]
@@ -197,8 +202,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "82b5730390699b3c",
+  "active": "1d300979c25a35ae",
   "lastOpenFiles": [
+    "未命名.base",
     "科研/VLM/benchmark.md",
     "科研/VLM/2d400a42e69aef4fd516c922cfa5357d.png",
     "科研/VLM/表格类型.md",
