@@ -1,0 +1,2 @@
+History depends on the written word.But how can a historian interpret a text if its authorship or age are uncertain,and indeed some of those words are missing?
+The problem is not a new one.But where human experts have struggled,
