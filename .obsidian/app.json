@@ -8,7 +8,9 @@
     "downscalePercent": 100
   },
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./",
-  "newFileLocation": "current",
-  "showLineNumber": true
+  "attachmentFolderPath": "/",
+  "newFileLocation": "root",
+  "showLineNumber": true,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }
