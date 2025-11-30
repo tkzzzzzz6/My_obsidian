@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "作业6-2"
             }
+          },
+          {
+            "id": "95fd481162956846",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,13 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
+                "file": "conflict-files-obsidian-git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "作业6-2 的大纲"
+              "title": "conflict-files-obsidian-git 的大纲"
             }
           }
         ]
@@ -201,9 +226,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0d9f9bccdf876dba",
+  "active": "95fd481162956846",
   "lastOpenFiles": [
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
+    "conflict-files-obsidian-git.md",
     "学习/课程学习/劳动教育/总结报告/assets/大二下/file-20251130135920386.png",
     "学习/课程学习/劳动教育/总结报告/大二下.md",
     "学习/课程学习/劳动教育/总结报告/assets/大二下",
