@@ -35,17 +35,24 @@
             "id": "bf45ed4e6e3d847c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "未命名.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
+                "file": "学习/课程学习/劳动教育/总结报告/大二下.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "大二下"
             }
           }
         ],
@@ -116,13 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.canvas",
+                "file": "学习/课程学习/劳动教育/总结报告/大二下.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "大二下 的大纲"
             }
           }
         ]
@@ -145,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.canvas",
+                "file": "学习/课程学习/劳动教育/总结报告/大二下.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +162,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "大二下 的反向链接列表"
             }
           },
           {
@@ -219,10 +226,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "91a84020fcc288dc",
+  "active": "bf45ed4e6e3d847c",
   "lastOpenFiles": [
-    "2025-52-0-1-52.md",
     "未命名.canvas",
+    "2025-52-0-1-52.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
     "Excalidraw",
