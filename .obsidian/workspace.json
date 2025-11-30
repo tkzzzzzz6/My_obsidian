@@ -11,10 +11,14 @@
             "id": "0d9f9bccdf876dba",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -188,11 +192,12 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
-    "学习/课程学习/劳动教育/总结报告/assets/大二下/file-20251130135920386.png",
     "学习/课程学习/劳动教育/总结报告/大二下.md",
+    "学习/课程学习/劳动教育/总结报告/assets/大二下/file-20251130170914865.png",
     "学习/课程学习/劳动教育/总结报告/assets/大二下",
     "学习/课程学习/劳动教育/总结报告/assets",
+    "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
+    "学习/课程学习/劳动教育/总结报告/assets/大二下/file-20251130135920386.png",
     "未命名.canvas",
     "2025-52-0-1-52.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
@@ -233,7 +238,6 @@
     "学习/数据结构与算法/连接非零数字并乘以其数字和 II - 力扣（LeetCode）.md",
     "学习/数据结构与算法/小A弹吉他_牛客题霸_牛客网.md",
     "科研/VLM/2d400a42e69aef4fd516c922cfa5357d.png",
-    "学习/计算机三级/Linux/linux题库2/1758208395025_d.png",
     "未命名 1.canvas"
   ]
 }
