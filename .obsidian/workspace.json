@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/课程学习/劳动教育/总结报告/大二下.md",
+                "file": "学习/课程学习/劳动教育/总结报告/大三上.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "大二下"
+              "title": "大三上"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/课程学习/劳动教育/总结报告/大二下.md",
+                "file": "学习/课程学习/劳动教育/总结报告/大三上.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大二下 的大纲"
+              "title": "大三上 的大纲"
             }
           }
         ]
@@ -203,10 +203,10 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
+    "学习/课程学习/劳动教育/总结报告/大二下.md",
     "学习/课程学习/劳动教育/总结报告/大三上.md",
     "学习/课程学习/劳动教育/大三上心得体会.md",
     "GEMINI.md",
-    "学习/课程学习/劳动教育/总结报告/大二下.md",
     "实验/数据库/实验一环境配置.md",
     "实验/数据库",
     "实验",
