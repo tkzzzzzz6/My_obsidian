@@ -30,8 +30,26 @@
               "icon": "lucide-file",
               "title": "作业6-2"
             }
+          },
+          {
+            "id": "bf45ed4e6e3d847c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,13 +116,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
+                "file": "未命名.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "作业6-2 的大纲"
+              "title": "未命名 的大纲"
             }
           }
         ]
@@ -127,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "科研/空间转录组/TRSMI/原始论文/TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION.md",
+                "file": "未命名.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +155,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION~SPATIAL MULTI-OMICS  INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION 的反向链接列表"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -184,28 +202,31 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.5,
-    "collapsed": true
+    "width": 330.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
-      "switcher:打开快速切换": false,
+      "bases:创建新数据库": true,
+      "switcher:打开快速切换": true,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "zk-prefixer:创建时间戳笔记": false,
+      "zk-prefixer:创建时间戳笔记": true,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4dec2133292e55e6",
+  "active": "91a84020fcc288dc",
   "lastOpenFiles": [
-    "未命名.base",
+    "2025-52-0-1-52.md",
+    "未命名.canvas",
+    "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
+    "Excalidraw",
+    "未命名.base",
     "实验/数据库/实验一环境配置.md",
     "实验/数据库/assets/实验一环境配置/file-20251130134326645.png",
     "实验/数据库/assets/实验一环境配置",
@@ -228,7 +249,6 @@
     "学习/计算机组成/assets/实验/file-20251130133318416.png",
     "学习/计算机组成/assets/实验",
     "学习/计算机组成/assets",
-    "学习/计算机组成/未命名.base",
     "学习/数据结构与算法/4.合理装配【算法赛】 - 蓝桥云课.md",
     "学习/数据结构与算法/3381. 长度可被 K 整除的子数组的最大元素和 - 力扣（LeetCode）.md",
     "学习/数据结构与算法/能量辐射_牛客题霸_牛客网.md",
@@ -244,9 +264,6 @@
     "学习/数据结构与算法/6.行程规划【算法赛】 - 蓝桥云课.md",
     "学习/数据结构与算法/连接非零数字并乘以其数字和 II - 力扣（LeetCode）.md",
     "学习/数据结构与算法/小A弹吉他_牛客题霸_牛客网.md",
-    "学习/数据结构与算法/有效子序列的数量 - 力扣（LeetCode）.md",
-    "学习/数据结构与算法/5.搭雪人【算法赛】 - 蓝桥云课.md",
-    "未命名.canvas",
     "科研/VLM/2d400a42e69aef4fd516c922cfa5357d.png",
     "学习/计算机三级/Linux/linux题库2/1758208395025_d.png",
     "学习/计算机三级/数据库/题库总结/Pasted image 20250914215315.png",
