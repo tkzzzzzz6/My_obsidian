@@ -4,21 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "ee71a52df2e2eddf",
+        "id": "03c8fd8a82de9aed",
         "type": "tabs",
         "children": [
           {
-            "id": "3dbedfc508ff4000",
+            "id": "4dec2133292e55e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实验/数据库/实验一环境配置.md",
+                "file": "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "实验一环境配置"
+              "title": "作业6-2"
             }
           }
         ]
@@ -88,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实验/数据库/实验一环境配置.md",
+                "file": "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实验一环境配置 的大纲"
+              "title": "作业6-2 的大纲"
             }
           }
         ]
@@ -192,8 +202,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3dbedfc508ff4000",
+  "active": "4dec2133292e55e6",
   "lastOpenFiles": [
+    "未命名.base",
+    "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
+    "实验/数据库/实验一环境配置.md",
     "实验/数据库/assets/实验一环境配置/file-20251130134326645.png",
     "实验/数据库/assets/实验一环境配置",
     "实验/数据库/assets",
@@ -207,7 +220,6 @@
     "学习/课程学习/劳动教育/总结报告/assets/大二下",
     "学习/课程学习/劳动教育/总结报告/assets",
     "学习/课程学习/数据库技术/第一次作业/第一次作业.md",
-    "未命名.base",
     "学习/课程学习/算法分析与设计/第二章作业.md",
     "学习/游戏开发/kitchenchoas/汉堡店游戏食谱大全.md",
     "学习/计算机组成/实验.md",
@@ -221,7 +233,6 @@
     "学习/数据结构与算法/3381. 长度可被 K 整除的子数组的最大元素和 - 力扣（LeetCode）.md",
     "学习/数据结构与算法/能量辐射_牛客题霸_牛客网.md",
     "学习/数据结构与算法/2025下半年实验六.md",
-    "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
     "学习/课程学习/劳动教育/心得体会.md",
     "学习/英语期刊/谷歌发布AI模型Aeneas助力古文献研究.md",
     "学习/数据结构与算法/最小连通代价_牛客题霸_牛客网.md",
@@ -235,12 +246,10 @@
     "学习/数据结构与算法/小A弹吉他_牛客题霸_牛客网.md",
     "学习/数据结构与算法/有效子序列的数量 - 力扣（LeetCode）.md",
     "学习/数据结构与算法/5.搭雪人【算法赛】 - 蓝桥云课.md",
-    "学习/数据结构与算法/C - 1122 Substring 2.md",
     "未命名.canvas",
     "科研/VLM/2d400a42e69aef4fd516c922cfa5357d.png",
     "学习/计算机三级/Linux/linux题库2/1758208395025_d.png",
     "学习/计算机三级/数据库/题库总结/Pasted image 20250914215315.png",
-    "科研/空间转录组/TRSMI/原始论文/Pasted image 20250916183547.png",
     "未命名 1.canvas"
   ]
 }
