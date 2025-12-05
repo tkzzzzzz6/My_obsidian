@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/计算机组成/实验三 串行乘法运算.md",
+                "file": "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,23 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "实验三 串行乘法运算"
-            }
-          },
-          {
-            "id": "e39c7c5d114275f9",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439039 1.png"
-              },
-              "icon": "lucide-image",
-              "title": "file-20251205072439039 1"
+              "title": "糟糕的打谱员_牛客题霸_牛客网"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439039 1.png",
+                "file": "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "file-20251205072439039 1 的大纲"
+              "title": "糟糕的打谱员_牛客题霸_牛客网 的大纲"
             }
           }
         ]
@@ -214,22 +201,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e39c7c5d114275f9",
+  "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
     "学习/计算机组成/实验三 串行乘法运算.md",
-    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439040.png",
-    "未命名.canvas",
-    "学习/计算机组成/实验4.md",
-    "学习/计算机组成/assets/实验三 串行乘法运算",
+    "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439016.png",
-    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439021.png",
-    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439022.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439022 1.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439023.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439026.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439027.png",
-    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439028.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439028 1.png",
+    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439029.png",
+    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439033.png",
+    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439034.png",
+    "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439034 1.png",
+    "未命名.canvas",
+    "学习/计算机组成/实验4.md",
+    "学习/计算机组成/assets/实验三 串行乘法运算",
     "学习/计算机组成/assets/实验三",
     "学习/计算机组成/实验二.md",
     "学习/计算机组成/assets/实验二",
