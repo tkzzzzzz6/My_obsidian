@@ -32,15 +32,15 @@
             }
           },
           {
-            "id": "b7aa8cd593548092",
+            "id": "e39c7c5d114275f9",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439040.png"
+                "file": "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439039 1.png"
               },
               "icon": "lucide-image",
-              "title": "file-20251205072439040"
+              "title": "file-20251205072439039 1"
             }
           }
         ],
@@ -111,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439040.png",
+                "file": "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439039 1.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "file-20251205072439040 的大纲"
+              "title": "file-20251205072439039 1 的大纲"
             }
           }
         ]
@@ -214,10 +214,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b7aa8cd593548092",
+  "active": "e39c7c5d114275f9",
   "lastOpenFiles": [
     "学习/计算机组成/实验三 串行乘法运算.md",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439040.png",
+    "未命名.canvas",
     "学习/计算机组成/实验4.md",
     "学习/计算机组成/assets/实验三 串行乘法运算",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439016.png",
@@ -258,7 +259,6 @@
     "Excalidraw/Drawing 2025-09-19 14.53.08.excalidraw.md",
     "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md",
     "conflict-files-obsidian-git.md",
-    "未命名.canvas",
     "2025-52-0-1-52.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "assets/实验/$EgeneratedAttachmentFileName.md",
