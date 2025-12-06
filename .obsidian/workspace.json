@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/专利申请/技术背景/CN118397700A.md",
+                "file": "科研/专利申请/技术背景/CN117827017A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CN118397700A"
+              "title": "CN117827017A"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/专利申请/技术背景/CN118397700A.md",
+                "file": "科研/专利申请/技术背景/CN117827017A.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CN118397700A 的大纲"
+              "title": "CN117827017A 的大纲"
             }
           }
         ]
@@ -203,8 +203,9 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "科研/专利申请/技术背景/CN119942376B.md",
     "科研/专利申请/技术背景/CN118397700A.md",
+    "科研/专利申请/技术背景/CN117827017A.md",
+    "科研/专利申请/技术背景/CN119942376B.md",
     "科研/专利申请/技术背景/CN117132924B.md",
     "科研/专利申请/技术背景/CN120747854A.md",
     "科研/专利申请/技术背景/CN120108002A.md",
@@ -249,7 +250,6 @@
     "实验/数据库/实验一环境配置.md",
     "学习/课程学习/算法分析与设计/第二章作业.md",
     "学习/英语期刊/谷歌发布AI模型Aeneas助力古文献研究.md",
-    "学习/英语期刊/未命名.md",
     "未命名 1.canvas"
   ]
 }
