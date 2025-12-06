@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/专利申请/技术背景/CN120997765A.md",
+                "file": "科研/专利申请/技术背景/CN120108002A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CN120997765A"
+              "title": "CN120108002A"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/专利申请/技术背景/CN120997765A.md",
+                "file": "科研/专利申请/技术背景/CN120108002A.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CN120997765A 的大纲"
+              "title": "CN120108002A 的大纲"
             }
           }
         ]
@@ -203,8 +203,9 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "科研/专利申请/技术背景/CN119745330A.md",
     "科研/专利申请/技术背景/CN120997765A.md",
+    "科研/专利申请/技术背景/CN120108002A.md",
+    "科研/专利申请/技术背景/CN119745330A.md",
     "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
     "科研/专利申请/技术背景",
     "科研/专利申请",
@@ -249,7 +250,6 @@
     "Excalidraw/Drawing 2025-09-19 14.53.08.excalidraw.md",
     "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md",
     "conflict-files-obsidian-git.md",
-    "2025-52-0-1-52.md",
     "未命名 1.canvas"
   ]
 }
