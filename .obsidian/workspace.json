@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/专利申请/技术背景/CN119745330A.md",
+                "file": "科研/专利申请/技术背景/CN120997765A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CN119745330A"
+              "title": "CN120997765A"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/专利申请/技术背景/CN119745330A.md",
+                "file": "科研/专利申请/技术背景/CN120997765A.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CN119745330A 的大纲"
+              "title": "CN120997765A 的大纲"
             }
           }
         ]
@@ -203,8 +203,9 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
     "科研/专利申请/技术背景/CN119745330A.md",
+    "科研/专利申请/技术背景/CN120997765A.md",
+    "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
     "科研/专利申请/技术背景",
     "科研/专利申请",
     "学习/计算机组成/实验三 串行乘法运算.md",
@@ -249,7 +250,6 @@
     "Excalidraw/Drawing 2025-09-19 10.33.03.excalidraw.md",
     "conflict-files-obsidian-git.md",
     "2025-52-0-1-52.md",
-    "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "未命名 1.canvas"
   ]
 }
