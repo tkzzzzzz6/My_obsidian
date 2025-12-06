@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
+                "file": "科研/专利申请/技术背景/CN119745330A.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "糟糕的打谱员_牛客题霸_牛客网"
+              "title": "CN119745330A"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
+                "file": "科研/专利申请/技术背景/CN119745330A.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "糟糕的打谱员_牛客题霸_牛客网 的大纲"
+              "title": "CN119745330A 的大纲"
             }
           }
         ]
@@ -203,8 +203,11 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "学习/计算机组成/实验三 串行乘法运算.md",
     "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
+    "科研/专利申请/技术背景/CN119745330A.md",
+    "科研/专利申请/技术背景",
+    "科研/专利申请",
+    "学习/计算机组成/实验三 串行乘法运算.md",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439016.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439022 1.png",
     "学习/计算机组成/assets/实验三 串行乘法运算/file-20251205072439023.png",
@@ -235,11 +238,9 @@
     "学习/课程学习/劳动教育/大三上心得体会.md",
     "学习/游戏开发/kitchenchoas/汉堡店游戏食谱大全.md",
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
-    "学习/课程学习/数据库技术/雨课堂/作业6-2.pdf",
     "学习/课程学习/劳动教育/总结报告/大二下.md",
     "GEMINI.md",
     "实验/数据库/实验一环境配置.md",
-    "实验/数据库",
     "学习/课程学习/算法分析与设计/第二章作业.md",
     "学习/英语期刊/谷歌发布AI模型Aeneas助力古文献研究.md",
     "学习/英语期刊/未命名.md",
@@ -249,7 +250,6 @@
     "conflict-files-obsidian-git.md",
     "2025-52-0-1-52.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
-    "assets/实验/$EgeneratedAttachmentFileName.md",
     "未命名 1.canvas"
   ]
 }
