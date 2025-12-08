@@ -11,13 +11,24 @@
             "id": "0d9f9bccdf876dba",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
+                "file": "学习/计算机组成原理/学习通作业/作业 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "作业 1"
             }
           }
         ]
@@ -87,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.base",
+                "file": "学习/计算机组成原理/学习通作业/作业 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of 作业 1"
             }
           }
         ]
@@ -190,11 +201,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef8c2b6e7f06456f",
+  "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "学习/计算机组成原理/Untitled",
-    "科研/专利申请/技术背景/CN117827017A.md",
+    "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
+    "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
+    "学习/计算机组成原理/学习通作业/assets/作业 1",
+    "学习/计算机组成原理/学习通作业/assets",
     "Untitled.base",
+    "学习/计算机组成原理/学习通作业/作业 1.md",
+    "学习/计算机组成原理/学习通作业",
+    "科研/专利申请/技术背景/CN117827017A.md",
     "科研/专利申请/技术背景/CN118397700A.md",
     "科研/专利申请/技术背景/CN119942376B.md",
     "科研/专利申请/技术背景/CN117132924B.md",
@@ -215,7 +231,6 @@
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439029.png",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439033.png",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439034.png",
-    "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439034 1.png",
     "未命名.canvas",
     "学习/计算机组成原理/实验4.md",
     "学习/计算机组成原理/assets/实验三 串行乘法运算",
@@ -227,18 +242,14 @@
     "学习/数据结构与算法/刷题笔记/2025-12-04-LeetCode刷题笔记-3625-统计梯形的数目-II.md",
     "学习/数据结构与算法/刷题笔记/2025-12-04-牛客刷题笔记-25_12-4-质数统计.md",
     "学习/数据结构与算法/刷题笔记/25-12-4",
-    "学习/数据结构与算法/刷题笔记",
-    "学习/未命名",
     "学习/科研创新/发明专利/溺水检测.md",
     "学习/课程学习/劳动教育/总结报告/大三上.md",
-    "学习/科研创新/发明专利",
     "学习/课程学习/劳动教育/大三上心得体会.md",
     "学习/游戏开发/kitchenchoas/汉堡店游戏食谱大全.md",
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
     "学习/课程学习/劳动教育/总结报告/大二下.md",
     "GEMINI.md",
     "实验/数据库/实验一环境配置.md",
-    "学习/课程学习/算法分析与设计/第二章作业.md",
     "未命名 1.canvas"
   ]
 }
