@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/计算机组成原理/学习通作业/作业 1.md",
+                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "作业 1"
+              "title": "作业 2"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/计算机组成原理/学习通作业/作业 1.md",
+                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 作业 1"
+              "title": "Outline of 作业 2"
             }
           }
         ]
@@ -203,12 +203,13 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
+    "学习/计算机组成原理/学习通作业/作业 1.md",
+    "学习/计算机组成原理/学习通作业/作业 2.md",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
     "学习/计算机组成原理/学习通作业/assets/作业 1",
     "学习/计算机组成原理/学习通作业/assets",
     "Untitled.base",
-    "学习/计算机组成原理/学习通作业/作业 1.md",
     "学习/计算机组成原理/学习通作业",
     "科研/专利申请/技术背景/CN117827017A.md",
     "科研/专利申请/技术背景/CN118397700A.md",
@@ -230,7 +231,6 @@
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439028 1.png",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439029.png",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439033.png",
-    "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439034.png",
     "未命名.canvas",
     "学习/计算机组成原理/实验4.md",
     "学习/计算机组成原理/assets/实验三 串行乘法运算",
