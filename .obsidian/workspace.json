@@ -11,24 +11,13 @@
             "id": "0d9f9bccdf876dba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "科研/专利申请/技术背景/CN117827017A.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "Untitled.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "CN117827017A"
+              "icon": "lucide-table",
+              "title": "Untitled"
             }
           }
         ]
@@ -55,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -98,13 +87,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/专利申请/技术背景/CN117827017A.md",
+                "file": "Untitled.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CN117827017A 的大纲"
+              "title": "Outline of Untitled"
             }
           }
         ]
@@ -188,23 +177,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": true,
-      "switcher:打开快速切换": true,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "markdown-importer:打开 Markdown 格式转换器": false,
-      "zk-prefixer:创建时间戳笔记": true,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
-    "科研/专利申请/技术背景/CN118397700A.md",
     "科研/专利申请/技术背景/CN117827017A.md",
+    "Untitled.base",
+    "科研/专利申请/技术背景/CN118397700A.md",
     "科研/专利申请/技术背景/CN119942376B.md",
     "科研/专利申请/技术背景/CN117132924B.md",
     "科研/专利申请/技术背景/CN120747854A.md",
@@ -241,7 +231,6 @@
     "学习/科研创新/发明专利/溺水检测.md",
     "学习/课程学习/劳动教育/总结报告/大三上.md",
     "学习/科研创新/发明专利",
-    "学习/科研创新",
     "学习/课程学习/劳动教育/大三上心得体会.md",
     "学习/游戏开发/kitchenchoas/汉堡店游戏食谱大全.md",
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
@@ -249,7 +238,6 @@
     "GEMINI.md",
     "实验/数据库/实验一环境配置.md",
     "学习/课程学习/算法分析与设计/第二章作业.md",
-    "学习/英语期刊/谷歌发布AI模型Aeneas助力古文献研究.md",
     "未命名 1.canvas"
   ]
 }
