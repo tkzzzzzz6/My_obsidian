@@ -2,5 +2,6 @@
   "cssTheme": "GitHub Theme",
   "accentColor": "",
   "baseFontSizeAction": false,
-  "monospaceFontFamily": "Cascadia Code"
+  "monospaceFontFamily": "Cascadia Code",
+  "theme": "moonstone"
 }

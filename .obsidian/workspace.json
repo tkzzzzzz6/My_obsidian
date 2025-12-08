@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bf5ddc67686b60d7",
+        "id": "65703829ff7586b9",
         "type": "tabs",
         "children": [
           {
-            "id": "0d9f9bccdf876dba",
+            "id": "3f43dc21dc57b62b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
+                "file": "学习/计算机组成原理/学习通作业/作业 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "作业 2"
+              "title": "作业 1"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
+                "file": "学习/计算机组成原理/学习通作业/作业 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 作业 2"
+              "title": "Outline of 作业 1"
             }
           }
         ]
@@ -201,10 +201,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0d9f9bccdf876dba",
+  "active": "3f43dc21dc57b62b",
   "lastOpenFiles": [
-    "学习/计算机组成原理/学习通作业/作业 1.md",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
+    "学习/计算机组成原理/学习通作业/作业 1.md",
     "学习/计算机组成原理/学习通作业/作业 2.md",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
     "学习/计算机组成原理/学习通作业/assets/作业 1",
