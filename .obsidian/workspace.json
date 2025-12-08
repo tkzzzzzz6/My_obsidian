@@ -11,12 +11,24 @@
             "id": "0d9f9bccdf876dba",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png"
+                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "file-20251208233212047"
+              "icon": "lucide-file",
+              "title": "作业 2"
             }
           }
         ]
@@ -86,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
+                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of file-20251208233212047"
+              "title": "Outline of 作业 2"
             }
           }
         ]
@@ -192,9 +204,9 @@
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
     "学习/计算机组成原理/学习通作业/作业 1.md",
+    "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
     "学习/计算机组成原理/学习通作业/作业 2.md",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
-    "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
     "学习/计算机组成原理/学习通作业/assets/作业 1",
     "学习/计算机组成原理/学习通作业/assets",
     "Untitled.base",
@@ -237,7 +249,6 @@
     "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
     "学习/课程学习/劳动教育/总结报告/大二下.md",
     "GEMINI.md",
-    "实验/数据库/实验一环境配置.md",
     "未命名 1.canvas"
   ]
 }
