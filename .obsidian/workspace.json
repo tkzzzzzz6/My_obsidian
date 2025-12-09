@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/红外小目标检测/对比/Introduction/1.md",
+                "file": "科研/红外小目标检测/对比/Related Work/related word.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1"
+              "title": "related word"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/红外小目标检测/对比/Introduction/1.md",
+                "file": "科研/红外小目标检测/对比/Related Work/related word.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1 的大纲"
+              "title": "related word 的大纲"
             }
           }
         ]
@@ -201,11 +201,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef8c2b6e7f06456f",
+  "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
+    "科研/红外小目标检测/对比/Introduction/1.md",
+    "科研/红外小目标检测/对比/Related Work/related word.md",
     "科研/红外小目标检测/对比/Related Work",
     "科研/红外小目标检测/对比/现在红外小目标检测遇到的问题/红外小目标图像的特点.md",
-    "科研/红外小目标检测/对比/Introduction/1.md",
     "科研/红外小目标检测/对比/现在红外小目标检测遇到的问题",
     "科研/红外小目标检测/对比/Abstract/红外小目标检测.md",
     "科研/红外小目标检测/对比/Introduction",
@@ -224,7 +225,6 @@
     "学习/算法分析与设计/平时作业",
     "学习/算法分析与设计",
     "未命名.canvas",
-    "Untitled.base",
     "学习/计算机组成原理/学习通作业/作业 1.md",
     "科研/专利申请/技术背景/CN117827017A.md",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
