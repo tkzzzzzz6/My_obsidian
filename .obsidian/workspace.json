@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/红外小目标检测/abstract/红外小目标检测.md",
+                "file": "科研/红外小目标检测/对比/Introduction/1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "红外小目标检测"
+              "title": "1"
             }
           }
         ]
@@ -98,13 +98,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/红外小目标检测/abstract/红外小目标检测.md",
+                "file": "科研/红外小目标检测/对比/Introduction/1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "红外小目标检测 的大纲"
+              "title": "1 的大纲"
             }
           }
         ]
@@ -203,9 +203,12 @@
   },
   "active": "0d9f9bccdf876dba",
   "lastOpenFiles": [
+    "科研/红外小目标检测/对比/Abstract/红外小目标检测.md",
+    "科研/红外小目标检测/对比/Introduction/1.md",
+    "科研/红外小目标检测/对比/Introduction",
+    "科研/红外小目标检测/对比",
     "学习/算法分析与设计/平时作业/第七章.md",
-    "科研/红外小目标检测/abstract/红外小目标检测.md",
-    "科研/红外小目标检测/abstract",
+    "科研/红外小目标检测/对比/Abstract",
     "科研/红外小目标检测",
     "学习/算法分析与设计/平时作业/assets/第七章/file-20251209215544010.png",
     "学习/算法分析与设计/平时作业/assets/第七章/file-20251209215526148.jpeg",
@@ -220,12 +223,10 @@
     "未命名.canvas",
     "Untitled.base",
     "学习/计算机组成原理/学习通作业/作业 2.pdf",
-    "学习/计算机组成原理/学习通作业/作业 1.pdf",
     "学习/计算机组成原理/学习通作业/作业 1.md",
     "科研/专利申请/技术背景/CN117827017A.md",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233212047.png",
-    "学习/计算机组成原理/学习通作业/assets/作业 1",
     "学习/计算机组成原理/学习通作业/作业 1-media/d6f89e28999fbb567ca4ed266b5a94ddbaf84509.png",
     "学习/计算机组成原理/学习通作业/作业 1-media/1e7f71f624d68d61bffbc36f549504f274a33070.png",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439072.png",
@@ -249,7 +250,6 @@
     "学习/数据结构与算法/刷题笔记/2025-12-04-牛客刷题笔记-25_12-4-质数统计.md",
     "学习/科研创新/发明专利/溺水检测.md",
     "学习/课程学习/劳动教育/总结报告/大三上.md",
-    "学习/课程学习/劳动教育/大三上心得体会.md",
     "未命名 1.canvas"
   ]
 }
