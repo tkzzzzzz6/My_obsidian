@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/数据结构与算法/添加逗号_牛客题霸_牛客网.md",
+                "file": "学习/计算机组成原理/学习通作业/作业 2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "添加逗号_牛客题霸_牛客网"
+              "title": "作业 2"
+            }
+          },
+          {
+            "id": "84f7f4d1d3dc3a81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,13 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/数据结构与算法/添加逗号_牛客题霸_牛客网.md",
+                "file": "conflict-files-obsidian-git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 添加逗号_牛客题霸_牛客网"
+              "title": "Outline of conflict-files-obsidian-git"
             }
           }
         ]
@@ -201,13 +226,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3f43dc21dc57b62b",
+  "active": "84f7f4d1d3dc3a81",
   "lastOpenFiles": [
-    "学习/计算机组成原理/学习通作业/作业 1.md",
-    "学习/数据结构与算法/添加逗号_牛客题霸_牛客网.md",
-    "学习/计算机组成原理/学习通作业/作业 1.pdf",
-    "学习/计算机组成原理/学习通作业/作业 2.pdf",
     "学习/计算机组成原理/学习通作业/作业 2.md",
+    "conflict-files-obsidian-git.md",
+    "学习/计算机组成原理/学习通作业/conflict-files-obsidian-git.pdf",
+    "学习/计算机组成原理/学习通作业/作业 2.pdf",
+    "学习/数据结构与算法/牛牛的考试_牛客题霸_牛客网.md",
+    "学习/数据结构与算法/添加逗号_牛客题霸_牛客网.md",
+    "学习/计算机组成原理/学习通作业/作业 1.md",
+    "学习/计算机组成原理/学习通作业/作业 1.pdf",
     "学习/计算机组成原理/学习通作业/作业 1.docx",
     "学习/计算机组成原理/学习通作业/作业 1-media/1e7f71f624d68d61bffbc36f549504f274a33070.png",
     "学习/计算机组成原理/学习通作业/作业 1-media/d6f89e28999fbb567ca4ed266b5a94ddbaf84509.png",
@@ -228,7 +256,6 @@
     "科研/专利申请/技术背景/CN119745330A.md",
     "学习/数据结构与算法/糟糕的打谱员_牛客题霸_牛客网.md",
     "科研/专利申请/技术背景",
-    "科研/专利申请",
     "学习/计算机组成原理/实验三 串行乘法运算.md",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439016.png",
     "学习/计算机组成原理/assets/实验三 串行乘法运算/file-20251205072439022 1.png",
@@ -247,9 +274,6 @@
     "学习/课程学习/劳动教育/总结报告/大三上.md",
     "学习/课程学习/劳动教育/大三上心得体会.md",
     "学习/游戏开发/kitchenchoas/汉堡店游戏食谱大全.md",
-    "学习/课程学习/数据库技术/雨课堂/作业6-2.md",
-    "学习/课程学习/劳动教育/总结报告/大二下.md",
-    "GEMINI.md",
     "未命名 1.canvas"
   ]
 }
