@@ -1,11 +1,4 @@
 # Obsidian
-.obsidian/workspace.json
-.obsidian/workspaces.json
-.obsidian/themes/*.css
-.obsidian/snippets/
-.obsidian/plugins/*/data.json
-.obsidian/plugins/*/secure-credentials.dat
-.obsidian/plugins/*/conversations.json
 
 # General Development
 node_modules/
@@ -18,4 +11,3 @@ build/
 Thumbs.db
 venv/
 __pycache__/
-.obsidian/workspace.json
