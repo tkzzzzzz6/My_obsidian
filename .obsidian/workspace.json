@@ -54,9 +54,21 @@
               "icon": "lucide-file",
               "title": "学生综合评估系统_牛客题霸_牛客网"
             }
+          },
+          {
+            "id": "a0012652a86485b4",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/视觉大模型.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "视觉大模型.excalidraw"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,13 +135,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/数据结构与算法/学生综合评估系统_牛客题霸_牛客网.md",
+                "file": "Excalidraw/视觉大模型.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "学生综合评估系统_牛客题霸_牛客网 的大纲"
+              "title": "视觉大模型.excalidraw 的大纲"
             }
           }
         ]
@@ -226,10 +238,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "169d581edd85f087",
+  "active": "a0012652a86485b4",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
+    "Excalidraw/视觉大模型.excalidraw.md",
     "学习/数据结构与算法/学生综合评估系统_牛客题霸_牛客网.md",
+    "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "学习/数据结构与算法/3606. 优惠券校验器 - 力扣（LeetCode）.md",
     "conflict-files-obsidian-git.md",
     "学习/数据结构与算法/3433. 统计用户被提及情况 - 力扣（LeetCode）.md",
@@ -274,7 +287,6 @@
     "科研/专利申请/技术背景/CN118397700A.md",
     "科研/专利申请/技术背景/CN119942376B.md",
     "科研/专利申请/技术背景/CN117132924B.md",
-    "科研/专利申请/技术背景/CN120747854A.md",
     "未命名 1.canvas"
   ]
 }
