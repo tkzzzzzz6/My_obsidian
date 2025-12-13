@@ -18,3 +18,4 @@ build/
 Thumbs.db
 venv/
 __pycache__/
+.obsidian/workspace.json
