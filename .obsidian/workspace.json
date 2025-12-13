@@ -66,9 +66,33 @@
               "icon": "excalidraw-icon",
               "title": "视觉大模型.excalidraw"
             }
+          },
+          {
+            "id": "d58ebfc56981fc95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -135,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/视觉大模型.excalidraw.md",
+                "file": "conflict-files-obsidian-git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "视觉大模型.excalidraw 的大纲"
+              "title": "conflict-files-obsidian-git 的大纲"
             }
           }
         ]
@@ -238,13 +262,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0012652a86485b4",
+  "active": "d58ebfc56981fc95",
   "lastOpenFiles": [
     "Excalidraw/视觉大模型.excalidraw.md",
+    "conflict-files-obsidian-git.md",
     "学习/数据结构与算法/学生综合评估系统_牛客题霸_牛客网.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "学习/数据结构与算法/3606. 优惠券校验器 - 力扣（LeetCode）.md",
-    "conflict-files-obsidian-git.md",
     "学习/数据结构与算法/3433. 统计用户被提及情况 - 力扣（LeetCode）.md",
     "学习/数据结构与算法/添加逗号_牛客题霸_牛客网.md",
     "学习/数据库原理与技术/assets/作业 7-2/file-20251212204021714.png",
