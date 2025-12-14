@@ -59,12 +59,24 @@
             "id": "a0012652a86485b4",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/视觉大模型.excalidraw.md"
+                "file": "学习/数据结构与算法/【模板】静态区间最值_牛客题霸_牛客网.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "视觉大模型.excalidraw"
+              "icon": "lucide-file",
+              "title": "【模板】静态区间最值_牛客题霸_牛客网"
             }
           }
         ],
@@ -135,13 +147,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/视觉大模型.excalidraw.md",
+                "file": "学习/数据结构与算法/【模板】静态区间最值_牛客题霸_牛客网.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "视觉大模型.excalidraw 的大纲"
+              "title": "【模板】静态区间最值_牛客题霸_牛客网 的大纲"
             }
           }
         ]
@@ -240,8 +252,9 @@
   },
   "active": "a0012652a86485b4",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Excalidraw/视觉大模型.excalidraw.md",
+    "学习/数据结构与算法/【模板】静态区间最值_牛客题霸_牛客网.md",
+    "conflict-files-obsidian-git.md",
     "学习/数据结构与算法/学生综合评估系统_牛客题霸_牛客网.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "学习/数据结构与算法/3606. 优惠券校验器 - 力扣（LeetCode）.md",
@@ -286,7 +299,6 @@
     "学习/计算机组成原理/实验4.md",
     "科研/专利申请/技术背景/CN118397700A.md",
     "科研/专利申请/技术背景/CN119942376B.md",
-    "科研/专利申请/技术背景/CN117132924B.md",
     "未命名 1.canvas"
   ]
 }
