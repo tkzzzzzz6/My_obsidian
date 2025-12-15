@@ -83,12 +83,24 @@
             "id": "7b1efd8708fc115d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-12-14 22.28.33.excalidraw.md"
+                "file": "科研/毕业设计/30篇文献阅读/硕士博士生毕业论文/(2025) 基于深度学习的双域CT重建方法研究.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-12-14 22.28.33.excalidraw"
+              "icon": "lucide-file",
+              "title": "(2025) 基于深度学习的双域CT重建方法研究"
             }
           }
         ],
@@ -159,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2025-12-14 22.28.33.excalidraw.md",
+                "file": "科研/毕业设计/30篇文献阅读/硕士博士生毕业论文/(2025) 基于深度学习的双域CT重建方法研究.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2025-12-14 22.28.33.excalidraw 的大纲"
+              "title": "(2025) 基于深度学习的双域CT重建方法研究 的大纲"
             }
           }
         ]
@@ -264,8 +276,12 @@
   },
   "active": "7b1efd8708fc115d",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-12-14 12.19.10.excalidraw.md",
     "Excalidraw/Drawing 2025-12-14 22.28.33.excalidraw.md",
+    "科研/毕业设计/30篇文献阅读/硕士博士生毕业论文/(2025) 基于深度学习的双域CT重建方法研究.md",
+    "科研/毕业设计/30篇文献阅读/硕士博士生毕业论文",
+    "科研/毕业设计/30篇文献阅读",
+    "科研/毕业设计",
+    "Excalidraw/Drawing 2025-12-14 12.19.10.excalidraw.md",
     "Excalidraw/视觉大模型.excalidraw.md",
     "Excalidraw/Drawing 2025-11-30 13.51.59.excalidraw.md",
     "学习/数据结构与算法/【模板】静态区间最值_牛客题霸_牛客网.md",
@@ -290,11 +306,8 @@
     "申请资料准备/社会实践/assets/26年寒假社会实践",
     "申请资料准备/社会实践/assets",
     "学习/数据结构与算法/大撒币_牛客题霸_牛客网.md",
-    "申请资料准备/社会实践",
-    "申请资料准备",
     "科研/红外小目标检测/对比/Related Work/related word.md",
     "科研/红外小目标检测/对比/Introduction/1.md",
-    "科研/红外小目标检测/对比/Related Work",
     "科研/红外小目标检测/对比/现在红外小目标检测遇到的问题/红外小目标图像的特点.md",
     "科研/红外小目标检测/对比/Abstract/红外小目标检测.md",
     "学习/算法分析与设计/平时作业/第七章.md",
@@ -310,7 +323,6 @@
     "学习/计算机组成原理/学习通作业/assets/作业 1/file-20251208233225682.png",
     "学习/计算机组成原理/实验三 串行乘法运算.md",
     "学习/计算机组成原理/实验二.md",
-    "学习/计算机组成原理/实验4.md",
     "未命名 1.canvas"
   ]
 }
