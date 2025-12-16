@@ -1,0 +1,1 @@
+[How we write rebuttals. By Devi Parikh, Dhruv Batra, Stefan Lee \| by Devi Parikh \| Medium](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1)

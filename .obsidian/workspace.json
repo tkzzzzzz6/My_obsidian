@@ -123,7 +123,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "科研/会议论文/icassp/IEEE ICASSP 2026  Barcelona, Spain  3-8 May 2026.md",
+                "file": "科研/会议论文/icassp/rebuttal技巧.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -138,7 +138,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "IEEE ICASSP 2026  Barcelona, Spain  3-8 May 2026"
+              "title": "rebuttal技巧"
             }
           }
         ],
@@ -209,13 +209,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "科研/会议论文/icassp/IEEE ICASSP 2026  Barcelona, Spain  3-8 May 2026.md",
+                "file": "科研/会议论文/icassp/rebuttal技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "IEEE ICASSP 2026  Barcelona, Spain  3-8 May 2026 的大纲"
+              "title": "rebuttal技巧 的大纲"
             }
           }
         ]
@@ -314,8 +314,9 @@
   },
   "active": "232e9109ea472c54",
   "lastOpenFiles": [
-    "科研/会议论文/icassp/中文版翻译.md",
     "科研/会议论文/icassp/IEEE ICASSP 2026  Barcelona, Spain  3-8 May 2026.md",
+    "科研/会议论文/icassp/rebuttal技巧.md",
+    "科研/会议论文/icassp/中文版翻译.md",
     "conflict-files-obsidian-git.md",
     "学习/数据结构与算法/IEEE ICASSP 2026  Barcelona, Spain  3-8 May 2026.md",
     "科研/会议论文/icassp",
@@ -354,7 +355,6 @@
     "科研/红外小目标检测/对比/Introduction/1.md",
     "科研/红外小目标检测/对比/现在红外小目标检测遇到的问题/红外小目标图像的特点.md",
     "科研/红外小目标检测/对比/Abstract/红外小目标检测.md",
-    "学习/算法分析与设计/平时作业/第七章.md",
     "学习/算法分析与设计/平时作业/assets/第七章/file-20251209215544010.png",
     "学习/算法分析与设计/平时作业/assets/第七章/file-20251209215526148.jpeg",
     "学习/算法分析与设计/平时作业/assets/第七章/file-20251209215524813.jpeg",
