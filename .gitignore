@@ -1,5 +1,6 @@
 # Obsidian
-workspace.json
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
 # General Development
 node_modules/
 dist/
