@@ -2,13 +2,13 @@
   paper: "a4",
   margin: (top: 18mm, bottom: 18mm, left: 16mm, right: 16mm),
   columns: 2,
-  header: [#align(right)[*by ttkwqe*]],
+  header: [#align(right)[*by SICAU ttkwqe*]],
   header-ascent: 8pt,
 )
 
-#set columns(gutter: 12pt)
+#set columns(gutter: 10pt)
 
-#set text(size: 10.5pt)
+#set text(size: 10pt)
 #set heading(numbering: "1.", outlined: true)
 #let problem(
   title,
