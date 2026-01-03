@@ -76,8 +76,8 @@
 
     ```cpp
     function linear_search(A,n,key)
-        for i <- 1 to n do
-            if A[i] = key then
+        for i := 1 to n do
+            if A[i] == key then
                 return i
         return 0
     ```
@@ -95,7 +95,7 @@
 
     ```cpp
     function hanoi(n,a,b,c)
-        if n = 1 then
+        if n == 1 then
             move disk from a to c
         else
             hanoi(n-1,a,c,b)
@@ -117,7 +117,7 @@
 
     ```cpp
     function insertion_sort(A,n)
-        for j <- 2 to n do
+        for j := 2 to n do
             key := A[j]
             i := j - 1
             while i > 0 and A[i] > key do
@@ -150,15 +150,15 @@
         n1 := mid - left + 1
         n2 := right - mid
         create arrays L[1..n1 + 1] and R[1..n2 + 1]
-        for i <- 1 to n1 do
+        for i := 1 to n1 do
             L[i] := A[left + i - 1]
-        for j <- 1 to n2 do
+        for j := 1 to n2 do
             R[j] := A[mid + j]
         L[n1 + 1] := INFINITY
         R[n2 + 1] := INFINITY
         i := 1
         j := 1
-        for k <- left to right do
+        for k := left to right do
           if L[i] <= R[j] then
                 A[k] := L[i]
                 i := i + 1
@@ -166,11 +166,11 @@
                 A[k] := R[j]
                 j := j + 1
             if i > n1 then
-                for m <- j to n2 do
+                for m := j to n2 do
                     A[k + 1] := R[m]
                     k := k + 1
             else if j > n2 then
-                for m <- i to n1 do
+                for m := i to n1 do
                     A[k + 1] := L[m]
                     k := k + 1
 
@@ -197,13 +197,13 @@
             return "Array must have at least two elements"
         largest := MIN_VALUE
         second_largest := MIN_VALUE
-        for i <- 1 to n do
+        for i := 1 to n do
             if A[i] > largest then
                 second_largest := largest
                 largest := A[i]
             else if A[i] > second_largest and A[i] != largest then
                 second_largest := A[i]
-        if second_largest = MIN_VALUE then
+        if second_largest == MIN_VALUE then
             return "No second largest element"
         return second_largest
     ```
@@ -211,7 +211,7 @@
     ```cpp
     function find_second_largest_tournament(A,n)
         create a tournament tree
-        for i<-1 to n do
+        for i := 1 to n do
             insert A[i] into the tournament tree
         largest := root of the tournament tree
         candidates := elements that lost to largest
@@ -237,7 +237,7 @@
     function is_prime(n)
         if n <= 1 then
             return false
-        for i <- 2 to sqrt(n) do
+        for i := 2 to sqrt(n) do
             if n mod i = 0 then
                 return false
         return true
@@ -248,32 +248,58 @@
   = 分治策略
   #problem("二分查找")[
     *题意:*
-
+    在一个数组中查找指定元素的位置。
 
     *输入:*
-
+    输入一个数组A及其长度n，以及要查找的元素key。
 
     *输出:*
+    返回元素key在数组中的位置，如果不存在则返回-1。
 
-
+    1. 迭代实现
     ```cpp
+    function binary_search(A,n,key)
+        left := 1
+        right := n-1
+        while left <= right do
+            mid := (left + right) / 2
+            if A[mid] == key then
+                return mid
+            else if A[mid] < key then
+                left := mid + 1
+            else
+                right := mid - 1
+        return -1
 
+    ```
 
+    2. 递归实现
+    ```cpp
+    function binary_search_recursive(A,left,right,key)
+        if left > right then
+            return -1
+        mid := (left + right) / 2
+        if A[mid] == key then
+            return mid
+        else if A[mid] < key then
+            return binary_search_recursive(A,mid+1,right,key)
+        else
+            return binary_search_recursive(A,left,mid-1,key)
     ```
   ]
 
   #problem("分治法总体伪码描述")[
     *题意:*
-
+    分治法总体伪码描述
 
     *输入:*
-
+    输入问题实例P。
 
     *输出:*
-
+    输出问题P的解。
 
     ```cpp
-
+    function divide_and_conquer(P)
 
     ```
   ]
