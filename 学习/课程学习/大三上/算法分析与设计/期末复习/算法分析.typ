@@ -15,10 +15,21 @@
     #align(right)[*by~~SICAU~~ttkwqe*]
     #line(length: 100%)
   ],
+  footer: [
+    #align(right)[
+      #context [
+        #text("第 ")
+        #counter(page).display("1")
+        #text(" / ")
+        #text(str(counter(page).final().at(0)))
+        #text(" 页")
+      ]
+    ]
+  ],
   header-ascent: 8pt,
 )
 
-#set text(size: 9pt)
+#set text(size: 8.2pt)
 #set raw(tab-size: 2)
 #show raw.where(block: true): it => block(
   fill: rgb(230, 240, 255),
@@ -28,7 +39,7 @@
   width: 95%,
   breakable: true,
 )[
-  #set text(font: "fira code", size: 8pt, weight: "bold")
+  #set text(font: "fira code", size: 7pt, weight: "bold")
   #align(left)[#it]
 ]
 #set heading(numbering: "1.", outlined: true)
@@ -302,6 +313,7 @@
     function divide_and_conquer(P)
 
     ```
+
   ]
 
   #problem("")[
