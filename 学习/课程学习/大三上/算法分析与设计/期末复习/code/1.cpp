@@ -1,0 +1,1017 @@
+// 直接插入排序
+void insert(int r[], int n)
+{
+    int i, j;
+    int temp;
+    for (i = 1; i < n; i++)
+    {
+        temp = r[i];
+        j = i - 1;
+        while (j >= 0 && temp < r[j]) // 降序temp变大于
+        {
+            r[j + 1] = r[j];
+            j--;
+        }
+        r[j + 1] = temp;
+    }
+}
+int main()
+{
+    int r[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    insert(r, 10);
+    return 0;
+}
+
+// 冒泡排序
+void bubble(int r[], int n)
+{
+    int i, j;
+    int temp;
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = n - 1; j > i; j--)
+        {
+            if (r[j] < r[j - 1])
+                ：/ 降序变大于
+                {
+                    temp = r[j];
+                    r[j] = r[j - 1];
+                    r[j - 1] = temp;
+                }
+        }
+    }
+}
+int main()
+{
+    int r[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    bubble(r, 10);
+    return 0;
+}
+// 顺序查找
+int SequenceSearch(int a[], int value, int n)
+{
+    int i;
+    for (i = 0; i < n; i++)
+    {
+        if (a[i] == value)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+int main()
+{
+    int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    SequenceSearch(a, value, 10);
+    return 0;
+}
+
+// 二分查找
+int BinSearch(int a[], int value, int low, int high)
+{
+    int mid = low + (high - low) / 2;
+    if (a[mid] == value)
+        return mid;
+    if (a[mid] > value)
+        return BinSearch(a, value, low, mid - 1);
+    if (a[mid] < value)
+        return BinSearch(a, value, mid + 1, high);
+}
+int main()
+{
+    int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    BinSearch(a, value, 0, 9);
+    return 0;
+}
+
+/*"1、请写出链栈的出栈的算法，并分析平均情况下的时间复杂度
+//链栈结构体*/
+
+typedef struct linknode
+{
+    ElemType data;
+    struct linknode *next;
+} LinkStNode;
+
+// 出栈 时间复杂度O（1）
+bool Pop(LinkStNode *&s, ElemType &e)
+{
+    LinkStNode *p;
+    if (s->next == NULL)
+        return false;
+    p = s->next;
+    e = p->data;
+    s->next = p->next; // 删除出点p
+    free(p);
+    return true;
+}
+
+// 2、请写出链栈的入栈的算法，并分析平均情况下的
+// 时间复杂度O(1)
+void Push(LinkStNode *&s, ElemType e)
+{
+    LinkStNode *p;
+    p = (LinkStNode *)malloc(sizeof(LinkStNode)); // 新建结点p
+    p->data = e;
+    p->next = s->next;
+    s->next = p;
+}
+
+// 3、请写出顺序栈的入栈、出栈算法
+// 顺序栈结构
+typedef struct
+{
+    ElemType data[MaxSize]; // 顺序栈需要设置最大值
+    int top;                // 栈顶指针，即存放栈顶元素在data数组的下标
+} SqStack;
+// 入栈
+bool Push(SqStack *&s, ElemType e)
+{
+    if (s->top == MaxSize - 1) // 判断栈满则溢出
+        return false;
+    s->top++;            // 栈顶指针＋1
+    s->data[s->top] = e; // 元素放指针处
+    return true;
+}
+// 出栈
+bool Pop(SqStack *&s, ElemType &e)
+{
+    if (s->top == -1) // 栈为空，即栈下溢出
+        return false;
+    e = s->data[s->top]; // 取栈顶元素
+    s->top--;            // 栈顶指针-1
+    return true;
+}
+
+// 4、"请写出循环队的出队、入队的算法。
+// 顺序队结构体
+typedef struct
+{
+    ElemType data[MaxSize]; // 存放队中元素
+    int front, rear;        // 队头与队尾指针
+} SqQueue;
+// 出队
+bool deQueue(SqQueue *&q, ElemType e)
+{
+    if (q->front == q->rear) // 队空下溢出
+        return false;
+    q->front++;
+    e = q->data[q->front];
+    return true;
+}
+
+// 入队
+bool enQueue(SqQueue *&q, ElemType e)
+{
+    if (q->rear == MaxSize - 1) // 队满上溢出
+        return false;
+    q->rear++; // 队尾+1
+    q->data[q->rear] = e;
+    return true;
+}
+
+// 5、"请写出在双链表中在第i个位置上添加元素的算法，并分析平均情况下的
+// 时间复杂度O(N)
+// 双链表结构体 P56
+typedef struct DNode
+{
+    ElemType data;       // 存放元素
+    struct DNode *prior; // 指向前驱结点
+    struct DNode *next;  // 指向后续结点
+} DlinkNode;
+
+bool ListInsert(DlinkNode *&L, int i, ElemType e)
+{
+    int j = 0;
+    DlinkNode *p = L, *s; // p指向头节点
+    if (i <= 0)
+        return false;
+    while (j < i - 1 && p != NULL) // 查找第i-1个结点
+    {
+        j++;
+        p = p->next;
+    }
+    if (p == NULL)
+        return false;
+    else
+    {
+        s = (DlinkNode *)malloc(sizeof(DlinkNode)); // 创建新结点
+        s->data = e;
+        s->next = p->next; // p结点之后插入s结点
+        if (p->next != NULL)
+            p->next->prior = s;
+        s->prior = p;
+        p->next = s;
+        return true;
+    }
+}
+
+// 6、请写出在双链表中删除第i个位置上的元素的算法，并分析平均情况下的
+// 时间复杂度O(N)
+bool ListDelete(DlinkNode *&L, int i, ElemType &e)
+{
+    int j = 0;
+    DlinkNode *p = L, *q;
+    if (i <= 0)
+        return false;
+    while (j < i - 1 && p != NULL) // 查找第i-1个结点
+    {
+        j++;
+        p = p->next;
+    }
+    if (p == NULL) // 未找到第i-1个结点
+        return false;
+    else
+    {
+        q = p->next; // q指向第i个结点
+        if (q == NULL)
+            return false;
+        e = q->data;
+        p->next = q->next;   // 删除结点q
+        if (p->next != NULL) // 若p结点存在后继结点，修改其前驱指针
+            P->next->prior = p;
+        free(q);
+        return true;
+    }
+}
+
+// 7、"请写出单链表中链表的销毁的算法，并分析平均情况下的
+// 时间复杂度O(N)
+void DestoryList(linknode *&L)
+{
+    linknode *pre = L, *p = L->next; // pre指向头节点，p指向首节点
+    while (p != NULL)
+    {
+        free(pre); // 释放pre
+        pre = p;
+        p = pre->next; // pre、p同步后移一个节点
+    }
+    free(pre); // 循环结束后p为NULL，pre指向尾节点，释放掉
+}
+
+// 8、请写出单链表中的尾插法建立单链表的算法，并分析平均情况下的
+// 有点迷8、9
+// 时间复杂度O(N)
+void CreatListR(linknode *&L, ElemType a[], int n)
+{
+    linknode *s, *r;
+    L = (linknode *)malloc(sizeof(linknode)); // 创建头结点
+    r = L;                                    // r始终指向尾节点，初始时指向的头节点
+    for (int i = 0; j < n; i++)               // 建立循环数据结点
+    {
+        s = (linknode *)malloc(sizeof(linknode)); // 创建数据结点s
+        s->data = a[i];                           // 将结点s插入到结点r之后
+        r->next = s;
+        r = s;
+    }
+    r->next = NULL; // 尾结点的next置为NULL
+}
+
+// 9、"请写出单链表中的头插法建立单链表的算法，并分析平均情况下的
+// 时间复杂度O(N)
+void CreatListF(linknode *&L, ElemType a[], int n)
+{
+    linknode *s;
+    L = (linknode *)malloc(sizeof(linknode));
+    L->next = NULL;             // 创建头结点，使其next域置为NULL
+    for (int i = 0; i < n; i++) // 建立循环数据结点s
+    {
+        s = (linknode *)malloc(sizeof(linknode));
+        s->data = a[i];
+        s->next = L->next;
+        L->next = s; // 将结点s插入到原首结点之前，头结点L之后
+    }
+}
+
+// 10、"请写出单链表基本运算中的在第x个位置删除结点y的算法，并分析平均情况下的
+// 时间复杂度O(N)
+bool ListDelete(linknode *&L, int i, ElemType &e)
+{
+    int j = 0;
+    linknode *p = L, *q; // p指向头结点
+    if (i <= 0)
+        return false;
+    while (j < i - 1 && p != NULL) // 查找第i-1个结点
+    {
+        j++;
+        p = p->next;
+    }
+    if (p == NULL)
+        return false;
+    else
+    {
+        q = p->next; // q指向第i-1个结点p
+        if (q == NULL)
+            return false;
+        e = q->data;
+        p->next = q->next; // 从单链表删除q结点
+        free(q);           // 释放q
+        return false;
+    }
+}
+// 11、"请写出单链表基本运算中的在第x个位置插入结点y的算法，并分析平均情况下的
+// 时间复杂度O(N)
+bool ListInsert(linknode *&L, int i, ElemType e)
+{
+    int j = 0;
+    linknode *p = L, *s; // p指向头节点
+    if (i <= 0)
+        return false;
+    while (j < i - 1 && p != NULL) // 查找第i-1个结点p
+    {
+        j++;
+        p = p->next;
+    }
+    if (p == NULL)
+        return false;
+    else
+    {
+        s = (linknode *)malloc(sizeof(linknode)); // 创建新节点s，data域置为e
+        s->data = e;
+        s->next = p->next;
+        p->next = s;
+        return true;
+    }
+}
+// 12、"请写出顺序表基本运算中的在第i个位置删除数据元素的算法，并分析平均情况下的
+// 时间复杂度O(N)
+// 顺序表结构体
+typedef struct
+{
+    ElemType data[MaxSize];
+    int length;
+} SqList;
+
+bool ListDelete(SqList *&L, int i, ElemType &e)
+{
+    int j;
+    if (i < 1 || i > L->length)
+        return false;
+    i--; // 将顺序表的逻辑序号化为物理符号
+    e = L->data[i];
+    for (j = i; j < L->length - 1; j++)
+    {
+        L->data[j] = L->data[j + 1]; // 将data【i】之后元素前移一个位置
+    }
+    L->length--; // 顺序表长度减1
+    return true;
+}
+
+// 13、"请写出顺序表基本运算中的在第i个位置插入数据元素x的算法，并分析平均情况下的
+// 时间复杂度O(N)
+typedef struct
+{
+    ElemType data[MaxSize];
+    int length;
+} SqList;
+
+bool ListInsert(SqList *&L, int i, ElemType e)
+{
+    int j;
+    if (i<1 | i> | L->length + 1)
+        return false;
+    i--;
+    for (j = L->length; j > i; j--)
+        L->data[j] = L->data[j - 1]; // 将data【i】后面的元素后移一个位置
+    L->data[i] = e;                  // 插入元素e
+    L->length++;
+    return true;
+}
+
+// 14、请写出顺序表基本运算中的按元素值查找数据元素x的算法，并分析平均情况下的
+// 时间复杂度O(N)
+typedef struct
+{
+    ElemType data[MaxSize];
+    int length;
+} SqList;
+
+int LocateElem(SqList *L, ElemType e)
+{
+    int i = 0;
+    while (i < L->length && L->data[i] != e)
+        i++; // 查找元素e
+    if (i >= L->length)
+        return 0;
+    else
+        return i + 1; // 找到后返回其逻辑序号
+}
+
+// 15、"请写出顺序表基本运算中的建立顺序表的算法，并分析平均情况下的
+// 时间复杂度O(N)
+typedef struct
+{
+    ElemType data[MaxSize];
+    int length;
+} SqList;
+
+void CreatList(SqList *&L, ElemType a[], int n) // 由a中的n个元素建立顺序表
+{
+    int i = 0, k = 0;                     // k表示元素个数，初始值为0
+    L = (SqList *)malloc(sizeof(SqList)); // 分配存放线性表的空间
+    while (i < n)
+    {
+        L->data[k] = a[i]; // 扫描数组a中的元素
+        k++;
+        i++; // 将元素a【i】放到L中
+    }
+    L->length = k; // 设置L的长度
+}
+
+/**
+第十六题：请写出链栈的结构体
+*/
+typedef struct linknode
+{
+    ElemType data;
+    struct linknode *next;
+} LinkStNode;
+/**
+第十七题：顺序存储是线性表的一种主要存储形式，请写出顺序表的结构体
+*/
+typedef struct
+{
+    ElemType data[MaxSize];
+    int length;
+} SqList;
+/**
+第十八题：请写出线性表的链式存储结构---单链表的结构体
+*/
+typedef struct LNode
+{
+    ElemType data;
+    struct LNode *next;
+} LinkNode;
+/**
+第十九题：线性表的链式存储是一种比较适合元素的添加和删除操作的结构，请写出单链表的结构体
+同上
+*/
+/**
+第二十题：请写出线性表的链式存储结构---单循环链表的结构体
+单循环链表的结构体与单链表结构体相同
+*/
+/**
+第二十一题:循环链表是将链表的首尾相连，可以实现元素的从后往前及从前往后的访问，请写出单循环链表的结构体
+单循环链表与单链表结构相同
+*/
+typedef struct LNode
+{
+    ElemType data;
+    struct LNode *next;
+} LinkNode;
+/**
+第二十二题:请写出线性表的链式存储结构---双链表的结构体
+*/
+typedef struct DNode
+{
+    ElemType data;
+    struct DNode *prior;
+    struct DNode *next;
+} DLinkNode;
+/**
+第二十三题：请写出线性表的顺序存储结构---顺序表的结构体
+*/
+typedef struct
+{
+    ElemType data[MaxSize];
+    int length;
+} SqList;
+/**
+第二十四题：请写出顺序栈的结构体
+*/
+typedef struct
+{
+    ElemType data[MaxSize];
+    int top;
+} SqStack;
+/**
+第二十五题：请写出树的双亲存储法的结构体
+*/
+typedef struct
+{
+    ElemType data;
+    int parent;
+} PTree[MaxSize];
+/**
+第二十六题：请写出顺序队的结构体
+*/
+typedef struct
+{
+    ElemType data[MaxSize];
+    int front;
+    int rear;
+} SqQueue;
+/**
+第二十七题：队列具有先进先出的特性，使用范围广泛。请写出顺序队的结构体
+同上
+*/
+
+/**
+第二十八题:请写出顺序队的循环队的结构体
+*/
+typedef struct
+{
+    ElemType data[MaxSize];
+    int front     // 队头指针
+        int count // 队列中元素个数
+} QuType;
+/**
+第二十九题：请写出链队的结构体
+*/
+typedef struct qnode
+{
+    ElemType data;
+    struct qnode *next;
+} DataNode;
+/**
+第三十题：请写出二叉树的链式存储的结构体
+*/
+typedef struct Node
+{
+    ElemType data;
+    struct Node *lchild;
+    struct Node *rchild;
+} BTNode;
+/**
+第三十一题：二叉树的一种重要存储结构是二叉链表存储，请写出二叉树的链式存储的结构体
+*/
+typedef struct Node
+{
+    ElemType data;
+    struct Node *lchild;
+    struct Node *rchild;
+} BTNode;
+/**
+第三十二题：二叉树也能用顺序存储来实现，但是使用局限性很大。二叉树一般用二叉链表存储，请写出二叉树的链式存储的结构体
+同上
+*/
+
+/**
+第三十三题：请写出线性表的链式存储结构---双循环链表的结构体
+双循环链表与双链表结构体相同
+*/
+typedef struct DNode
+{
+    ElemType data;
+    struct DNode *prior;
+    struct DNode *next;
+} DLinkNode;
+/**
+第三十四题：
+以此括号表示法A(B(D,E(H(J,K(L,M(,N))))),C(F,G(,I)))建立一棵二叉树，实现这个算法，并分析这个算法的复杂度
+*/
+void CreateBTree(BTNode *&b, char *str)
+{
+    BTNode *p, *St[MaxSize];
+    int j = 0, top = -1, k;
+    b = NULL;
+    char ch = str[j];
+    while (ch != '\0')
+    {
+        switch (ch)
+        {
+        case '(':
+            top++;
+            St[top];
+            k = 1;
+            break;
+        case ',':
+            k = 2;
+            break;
+        case ')':
+            top--;
+            break;
+        default:
+            p = (LinkNode *)malloc(sizeof(LinkNode));
+            if (b == NULL)
+                b = p;
+            else
+            {
+                switch (k)
+                {
+                case 1:
+                    St[top]->lchild = p;
+                    break;
+                case 2:
+                    St[top]->rchild = p;
+                    break;
+                }
+            }
+        }
+        j++;
+        ch = str[j];
+    }
+}
+char str[MaxSize] = 'A(B(D,E(H(J,K(L,M(,N))))),C(F,G(,I)))';
+BTNode *b;
+CreateBTree(b, str);
+/**
+第三十五题：
+设计一个算法，请找出一棵完全二叉树的所有叶子结点将其进行删除，并输出所有剩下的结点。
+实现这个算法，并分析这个算法的复杂度。
+*/
+void Dispd
+    /**
+    第三十六题：
+    设计一个算法，找出二叉树上有没有一个值为x的结点，若有请输出，若没有请给出提示。
+    实现这个算法，并分析这个算法的复杂度。（要求：采用非递归方式实现）
+    算法复杂度为O(n)
+    */
+    bool
+    FindNode(BTNode *b, ElemType1 e)
+{
+    BTNode *p;
+    SqStack *st;
+    InitStack(st);
+    if (b != NULL)
+    {
+        Push(st, b);
+        while (!StackEmpty(st))
+        {
+            Pop(st, p);
+            if (p->data == e)
+            {
+                printf("找到结点：%c", p->data);
+                return true;
+            }
+            if (p->rchild != NULL)
+                Push(st, p->rchild);
+            if (p->lchild != NULL)
+                Push(st, p->lchild);
+        }
+        printf("二叉树没有结点：%c", e);
+    }
+    DestroyStack(st);
+    return false;
+}
+/**
+第三十七题：设计一个算法，统计二叉树上所有的结点个数，并输出结点。实现这个算法，并分析这个算法的复杂度。
+（要求：采用非递归方式实现）
+算法复杂度为O(n)
+*/
+void DispBTree(BTNode *b)
+{
+    BTNode *p;
+    SqStack *st;
+    InitStack(st);
+    int j = 0; // 记录节点个数
+    if (b != NULL)
+    {
+        Push(st, b);
+        while (!StackEmpty(st))
+        {
+            Pop(st, p);
+            printf("%c", p->data);
+            j++;
+            if (p->rchild != NULL)
+                Push(st, p->rchild);
+            if (p->lchild != NULL)
+                Push(st, p->lchild);
+        }
+        printf("\n");
+        printf("结点个数为：%d", j);
+    }
+    DestroyStack(st);
+}
+/**
+第三十八题：设计一个算法，找出二叉树上所有的双分支结点，输出并统计总数。实现这个算法，并分析这个算法的复杂度。
+（要求：采用非递归方式实现）
+算法复杂度为O(n)
+*/
+void ParentNode(BTNode *b)
+{
+    BTNode *p;
+    SqStack *st;
+    InitStack(st);
+    int j = 0; // 记录节点个数
+    if (b != NULL)
+    {
+        Push(st, b);
+        while (!StackEmpty(st))
+        {
+            Pop(st, p);
+            if (p->lchild != NULL && p->rchild != NULL)
+            {
+                printf("%c", p->data);
+                j++;
+            }
+            if (p->rchild != NULL)
+                Push(st, p->rchild);
+            if (p->lchild != NULL)
+                Push(st, p->lchild);
+        }
+        printf("\n");
+        printf("结点个数为：%d", j);
+    }
+    DestroyStack(st);
+}
+/**
+第三十九题：设计一个算法，找出二叉树上所有的非叶子结点，输出并统计总数。
+实现这个算法，并分析这个算法的复杂度。（要求：采用非递归方式实现）
+时间复杂度为O(n)
+*/
+void PreOrder1(BTNode *b)
+{
+    BTNode *p;
+    SqStack *st;
+    InitStack(st);
+    int j = 0; // 记录节点个数
+    if (b != NULL)
+    {
+        Push(st, b);
+        while (!StackEmpty(st))
+        {
+            Pop(st, p);
+            if (p->lchild != NULL || p->rchild != NULL)
+            {
+                printf("%c", p->data);
+                j++;
+            }
+            if (p->rchild != NULL)
+                Push(st, p->rchild);
+            if (p->lchild != NULL)
+                Push(st, p->lchild);
+        }
+        printf("\n");
+        printf("结点个数为：%d", j);
+    }
+    DestroyStack(st);
+}
+/**
+第四十题：设计一个算法，判断顺序表L是否是递减的，若不是请将其递减处理。
+实现这个算法，并分析这个算法的复杂度。
+时间复杂度为O(n^2)
+
+*/
+void deSqList(SqList *&L)
+{
+    int i, j;
+    int k = 0;
+    for (i = 0; i < L->length - 1; i++)
+    {
+        if (L->data[i] < L->data[i + 1]) // 不是递增顺序表，需要进行递增排序
+        {
+            k = 1;
+            break;
+        }
+    }
+    if (k == 0)
+    {
+        printf("顺序表为递增顺序表");
+    }
+    else
+    {
+        for (i = 0; i < L->length; i++)
+            for (j = 0; j < L->length - 1 - i; j++)
+            {
+                if (L->data[j] < L->data[j + 1])
+                {
+                    int temp = L->data[j];
+                    L->data[j] = L->data[j + 1];
+                    L->data[j + 1] = temp;
+                }
+            }
+    }
+}
+/**
+第四十一题：设计一个算法，判断单链表L是否是递增的，若不是请将其递增处理。
+实现这个算法，并分析这个算法的复杂度。
+时间复杂度为O(n^2)
+*/
+void adSqList(SqList *&L)
+{
+    int i, j;
+    int k = 0;
+    for (i = 0; i < L->length - 1; i++)
+    {
+        if (L->data[i] > L->data[i + 1]) // 不是递增顺序表，需要进行递增排序
+        {
+            k = 1;
+            break;
+        }
+    }
+    if (k == 0)
+    {
+        printf("顺序表为递增顺序表");
+    }
+    else
+    {
+        bool exchange;
+        for (i = 0; i < n - 1; i++)
+        {
+            exchange = false;
+            for (j = n - 1; j > i; j--)
+                if (L->data[j] < L->data[j - 1])
+                {
+                    int temp = L->data[j];
+                    L->data[j] = L->data[j - 1];
+                    L->data[j - 1] = temp;
+                    exchange = true;
+                }
+            if (!exchange)
+                return;
+        }
+    }
+}
+/**
+第四十二题：定义一个采用顺序结构存储的线性表，删除元素在介于[x, y]之间的所有元素，并统计删除元素的个数。
+实现这个算法，并分析这个算法的复杂度。
+复杂度O(n)
+*/
+void DeleteSec(SqList *&L, int x, int y)
+{
+    int j = 0;
+    for (int i = 0; i < L->length; i++)
+    {
+        if (!(L->data[i] >= x && L->data[i] <= y))
+        {
+            L->data[j++] = L->data[i];
+        }
+    }
+    L->length = j;
+}
+/**
+第四十三题：'设计题，请写出以下要求的伪码算法
+设从键盘输入一整数序列a1，a2，…an，试编程实现：当ai>0时，ai进队，当ai<0时，将队首元素出队，
+当ai=0时，表示输入结束。要求将队列处理成环形队列，使用环形队列算法库中定义的数据类型及算法，
+程序中只包括一个函数（main函数），入队和出队等操作直接在main函数中调用即可。
+当进队出队异常（如队满）时，要打印出错信息。
+*/
+
+/**
+第四十四题：请设计一个算法，
+在表{22,4,23,11,20,2,15,13,30,45,26,34,29,35,26,36,55,98,56, ,
+697,535,53474,61,90,80,96,127,158,116,114,28,113,115,12,1411,243,188,187,218,195,210,279,307,
+492,452,408,361,421,399,856,523}中查找有没有值为x的结点？
+若有请输出提示，并写出是第几次查找成功的，若无请提示查找失败。
+实现这个算法，并分析这个算法的复杂度。方法不限，尽量选最好的方法来实现。
+*/
+// 使用折半方法实现
+// 快速排序算法
+int partition1(SqList *&L, int s, int t)
+{
+    int i = s, j = t;
+    int temp = L->data[i];
+    while (i < j)
+    {
+        while (j > i && L->data[j] >= temp)
+            j--;
+        L->data[i] = L->data[j];
+        while (i < j && L->data[i] <= temp)
+            i++;
+        L->data[j] = L->data[i];
+    }
+    L->data[i] = temp;
+    return i;
+}
+void QuickSort(SqList *&L, int s, int t)
+{
+    int i;
+    if (s < t)
+    {
+        i = partition1(L, s, t);
+        QuickSort(L, s, i - 1);
+        QuickSort(L, i + 1, t);
+    }
+}
+// 折半查找
+void BinSearch(SqList *&L, int n, int k)
+{
+    int low = 0, high = n - 1, mid, sum = 0;
+    while (low <= high)
+    {
+        sum++;
+        mid = (low + high) / 2;
+        if (k == L->data[mid])
+        {
+            printf("第%d次找到值为%d的结点在第%d个位置上", sum, k, mid + 1);
+            return;
+        }
+        if (k < L->data[mid])
+            high = mid - 1;
+        else
+            low = mid + 1;
+    }
+    printf("未找到该结点");
+}
+QuickSort(L, 0, 50);
+DispList(L);
+BinSearch(L, 51, 20);
+/**
+第四十五题：请设计一个算法，
+对表{22,4,23,11,20,2,15,13,30,45,26,34,29,35,26,36,55,98,56,
+697,535,53474,61,90,80,96,127,158,116,114,28,113,115,12,1411,
+243,188,187,218,195,210,279,307,492,452,408,361,421,399,856,523}
+进行降序排序，实现这个算法，并分析这个算法的复杂度。方法不限，尽量选最好的方法来实现。
+使用快速排序，时间复杂度为O(nlog(2)^n)
+*/
+int partition1(SqList *&L, int s, int t)
+{
+    int i = s, j = t;
+    int temp = L->data[s];
+    while (i < j)
+    {
+        while (j > i && L->data[j] <= temp) // 从右往左找大于temp的值，替换到data[i]中
+            j--;
+        L->data[i] = L->data[j];
+        while (i < j && L->data[i] >= temp) // 从左往右找小于temp的值，替换到data[j]中
+            i++;
+        L->data[j] = L->data[i];
+    }
+    L->data[i] = temp;
+    return i;
+}
+void QuickSort(SqList *&L, int s, int t)
+{
+    int i;
+    if (s < t)
+    {
+        i = pition(L, s, t);
+        QuickSort2(L, s, i - 1);
+        QuickSort2(L, i + 1, t);
+    }
+}
+QuickSort(L, s, t);
+/**
+第四十六题：请设计一个算法，
+对表{22,4,23,11,20,2,15,13,30,45,26,34,29,35,26,36,55,98,56,
+697,535,53474,61,90,80,96,127,158,116,114,28,113,115,12,1411,
+243,188,187,218,195,210,279,307,492,452,408,361,421,399,856,523}
+进行升序排序，实现这个算法，并分析这个算法的复杂度。方法不限，尽量选最好的方法来实现。
+使用快速排序，时间复杂度为O(nlog(2)^n)
+*/
+int partition1(SqList *&L, int s, int t)
+{
+    int i = s, j = t;
+    int temp = L->data[s];
+    while (i < j)
+    {
+        while (j > i && L->data[j] >= temp) // 从右往左找小于temp的值，替换到data[i]中
+            j--;
+        L->data[i] = L->data[j];
+        while (i < j && L->data[i] <= temp) // 从左往右找大于temp的值，替换到data[j]中
+            i++;
+        L->data[j] = L->data[i];
+    }
+    L->data[i] = temp;
+    return i;
+}
+void QuickSort(SqList *&L, int s, int t)
+{
+    int i;
+    if (s < t)
+    {
+        i = pition(L, s, t); // 第一次排序找到中间值
+        QuickSort2(L, s, i - 1);
+        QuickSort2(L, i + 1, t);
+    }
+}
+QuickSort(L, s, t);
+/**
+第四十七题：同四十四题
+*/
+/**
+第四十八题:请写出冒泡排序算法，并分析平均情况下的时间复杂度
+时间复杂度为O(n^2)
+*/
+void BubbleSort(SqList *&L, int n)
+{
+    int i, j, temp;
+    bool exchange;
+    for (i = 0; i < n - 1; i++)
+    {
+        exchange = false;
+        for (j = n - 1; j > i; j--)
+        {
+            if (L->data[j] < L->data[j - 1])
+            {
+                temp = L->data[j];
+                L->data[j] = L->data[j - 1];
+                L->data[j - 1] = temp;
+                exchange = true;
+            }
+            if (!exchange)
+                return;
+        }
+    }
+}
+/**
+第四十九题：请写出折半插入排序算法，并分析平均情况下的时间复杂度
+时间复杂度为O（nlog(2)^n）
+*/
+int BinSearch(SqList *&L, int n, int k)
+{
+    int low = 0, high = n - 1, mid;
+    while (low <= high)
+    {
+        mid = (low + high) / 2;
+        if (k == L->data[mid])
+            return mid + 1;
+        if (k < L->data[mid])
+            high = mid - 1;
+        else
+            low = mid + 1；
+    }
+    return 0;
+}
