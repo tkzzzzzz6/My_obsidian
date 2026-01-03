@@ -48,9 +48,6 @@ alter table student
 alter column sage int;
 
 alter table course
-alter column cname varchar(30) unique;
-
-alter table course
 add unique(cname);
 
 -- 删除基本表
@@ -58,3 +55,41 @@ drop table student cascade;
 
 -- 2. 数据更新
 
+-- 插入数据
+insert into student values('1001', 'Alice', 'F', 20, 'CS', '2020-09-01');
+
+insert into sc(sno,cno,grade) values('1001', 'C01', nll);
+-- 等效于
+insert into sc(sno,cno) values('1001', 'C01');
+
+create table dept_avg_age(
+    dept char(20) primary key,
+    avg_age float
+);
+
+insert into dept_avg_age(dept,avg_age) select sdept,avg(sage)
+from student group by sdept;
+
+insert into S values('S2','P4','J6',400);
+
+-- 修改数据
+update student set sage = 22 where sno = '2001';
+
+update student set sage = sage + 1;
+
+-- 带子查询的修改语句
+uodate sc set grade = 0 where sno in (
+    select sno from student where sdept = 'cs'
+);
+
+update P set color = 'blue'
+where color = 'red';
+
+-- 删除数据
+delete from student where sno = '1001';
+
+delete from sc;
+
+delete from sc where sno in (
+    select sno from student where sdept = 'cs'
+);
