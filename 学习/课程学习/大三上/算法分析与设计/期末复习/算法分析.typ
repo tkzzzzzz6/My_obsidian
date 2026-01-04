@@ -29,7 +29,7 @@
   header-ascent: 8pt,
 )
 
-#set text(size: 8.2pt)
+#set text(size: 8pt)
 #set raw(tab-size: 2)
 #show raw.where(block: true): it => block(
   fill: rgb(230, 240, 255),
@@ -39,7 +39,7 @@
   width: 95%,
   breakable: true,
 )[
-  #set text(font: "fira code", size: 7pt, weight: "bold")
+  #set text(font: "fira code", size: 6.8pt, weight: "bold")
   #align(left)[#it]
 ]
 #set heading(numbering: "1.", outlined: true)
@@ -342,4 +342,109 @@
 
   = 网络流算法
 
-  = 可能考的数据结构题
+#pagebreak()
+
+  = 数据结构相关
+
+  = 排序
+
+  #problem("直接插入排序")[
+    *题意:*
+
+
+    *输入:*
+
+
+    *输出:*
+
+
+    ```cpp
+
+
+    ```
+  ]
+
+  #problem("冒泡排序")[
+    *题意:*
+
+
+    *输入:*
+
+
+    *输出:*
+
+
+    ```cpp
+
+
+    ```
+  ]
+
+
+== 查找
+
+  #problem("顺序查找")[
+    *题意:*
+
+
+    *输入:*
+
+
+    *输出:*
+
+
+    ```cpp
+
+
+    ```
+  ]
+
+  #problem("二分查找")[
+    *题意:*
+
+
+    *输入:*
+
+
+    *输出:*
+
+
+    ```cpp
+
+
+    ```
+  ]
+
+== 链表相关
+
+  #problem("链栈出栈")[
+    *题意:*
+
+
+    *输入:*
+
+
+    *输出:*
+
+
+    ```cpp
+
+
+    ```
+  ]
+
+  #problem("链栈入栈")[
+    *题意:*
+
+
+    *输入:*
+
+
+    *输出:*
+
+
+    ```cpp
+
+
+    ```
+  ]
