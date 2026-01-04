@@ -1,0 +1,46 @@
+// 归并排序（分治）：分解数组 -> 递归求解 -> 合并
+
+procedure MergeSort(A, left, right)
+    if left >= right then
+        return
+    end if
+
+    mid <- floor((left + right) / 2)
+    MergeSort(A, left, mid)
+    MergeSort(A, mid + 1, right)
+    Merge(A, left, mid, right)
+end procedure
+
+
+procedure Merge(A, left, mid, right)
+    // 复制辅助数组（闭区间）
+    B[left..right] <- A[left..right]
+
+    i <- left
+    j <- mid + 1
+    k <- left
+
+    while i <= mid and j <= right do
+        if B[i] <= B[j] then
+            A[k] <- B[i]
+            i <- i + 1
+        else
+            A[k] <- B[j]
+            j <- j + 1
+        end if
+        k <- k + 1
+    end while
+
+    // 将剩余部分拷回（另一段若有剩余，本来就在 A 里/或可同样拷回）
+    while i <= mid do
+        A[k] <- B[i]
+        i <- i + 1
+        k <- k + 1
+    end while
+
+    while j <= right do
+        A[k] <- B[j]
+        j <- j + 1
+        k <- k + 1
+    end while
+end procedure

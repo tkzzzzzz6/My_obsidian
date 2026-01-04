@@ -1,0 +1,48 @@
+// 输入:数组X[1..n]
+// 输出:最大子段和 Smax
+// 1.基于枚举的方法
+procedure MaxSubarrayMax(X,n)
+    Smax <- 0
+    for l <- 1 to n do
+        S <- 0
+        for r <- l to n do
+            S <- S + X[r]
+            Smax <- max(Smax,S)
+        end
+    end
+    return Smax
+end procedure
+
+// 2.采用分治的方法
+procedure MaxSubarrayMax(X,low,high)
+    if low = high then
+        return X[low]
+    end
+    else 
+        mid <- floor((low + high) / 2)
+        S1 <- MaxSubarrayMax(X,low,mid)
+        S2 <- MaxSubarrayMax(X,mid + 1,high)
+        S3 <- CrossingSubArray(X,low,mid,high)
+        Smax <- max{S1,S2,S3}
+    end
+    reutrn Smax
+end procedure 
+// 整体时间复杂度O(n log n)
+
+procedure CrossingSubArray(X,low,mid,high)
+    Sleft <- -infinity
+    Sum <- 0
+    for l <- mid downto low do
+        Sum <- Sum + X[l]
+        Sleft <- max{Sleft,Sum}
+    end
+    Sright <- -infinity
+    Sum <- 0
+    for r <- mid + 1 to high do
+        Sum <- Sum + X[r]
+        Sright <- max{Sright,Sum}
+    end
+    S3 <- Sleft + Sright
+    return S3
+end procedure
+// 上面过程的时间复杂度O(n)

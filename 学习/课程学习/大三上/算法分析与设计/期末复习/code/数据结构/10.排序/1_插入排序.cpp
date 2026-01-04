@@ -1,4 +1,16 @@
-// 直接插入排序,升序
+// 插入排序,升序
+
+/* 
+for j <- 2 to n do
+    key = a[j]
+    i = j - 1
+    while i > 0 and a[i] > key do
+        a[i+1] = a[i]
+        i = i - 1
+    end
+    a[i+1] = key
+end
+*/
 
 void insertionSort(int arr[],int n)
 {

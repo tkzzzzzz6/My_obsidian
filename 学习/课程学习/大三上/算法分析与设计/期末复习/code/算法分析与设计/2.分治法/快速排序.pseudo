@@ -1,0 +1,24 @@
+//输入:未排序的数组A以及数组大小n
+
+procedure QuickSort(A,left,right)
+    if left >= right then
+        return
+    end
+    pivot <- Partition(A,left,right)
+    QuickSort(A,left,pivot - 1)
+    QuickSort(A,pivot + 1,right)
+    
+end procedure
+
+procedure Partition(A,left,right)
+    pivot <- A[right]
+    i <- left - 1
+    for j <- left to right - 1 do
+        if A[j] <= pivot then
+            i <- i + 1
+            swap A[i] and A[j]
+        end
+    end
+    swap A[i+1] and A[right]
+    return i + 1
+end procedure
