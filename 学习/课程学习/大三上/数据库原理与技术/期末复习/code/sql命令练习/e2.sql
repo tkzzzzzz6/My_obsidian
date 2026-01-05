@@ -41,6 +41,9 @@ create table SS (
 ) engine=InnoDB;
 -- 2. 在Student表 xh 属性列上建立名称为xh 的聚簇索引。
 -- MySQL(InnoDB)：主键（xh）天然就是聚簇组织方式，因此题目第 2 条在 MySQL 中可视为已满足。
+-- 如果老师要求“必须给出一条建聚簇索引的 SQL 语句”，MySQL 下等价表达通常写成“把 xh 设为主键”：
+-- （仅当你在第 1 题建表时没有写 PRIMARY KEY 时才需要执行）
+-- alter table Student add primary key (xh);
 -- 如果老师要求“必须写建索引语句”，通常写普通二级索引即可（但对主键列来说是冗余的）：
 -- create index idx_student_xh on Student(xh);
 -- 3. 使用SQL 语言 从表Student 中删除学生“张三”的记录。
