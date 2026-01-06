@@ -141,5 +141,5 @@ where no exists(
     )
 );
 
-
-
+alter table s
+add class_no char(6);
