@@ -46,6 +46,7 @@ create table SS (
 -- alter table Student add primary key (xh);
 -- 如果老师要求“必须写建索引语句”，通常写普通二级索引即可（但对主键列来说是冗余的）：
 -- create index idx_student_xh on Student(xh);
+create cluster index student_xh on student(xh);
 -- 3. 使用SQL 语言 从表Student 中删除学生“张三”的记录。
 delete from Student where xm = '张三';
 -- 4. 使用SQL 语言为 SS 表添加一条记录： 学号为“xh001”的学生
@@ -81,3 +82,4 @@ where szx = '计算机' and xb = '男';
 -- 10.    回收用户“李明”对 Sports 表的查询权限。
 -- MySQL：注意这里的 db_name 需要替换成你实际使用的数据库名，并且要与 GRANT 的对象保持一致。
 revoke select on db_name.Sports from '李明'@'%';
+revoke select on table Sports from '李明'@'%';
