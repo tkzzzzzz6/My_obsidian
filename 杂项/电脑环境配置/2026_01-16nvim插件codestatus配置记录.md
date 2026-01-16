@@ -12,8 +12,7 @@ tags:
 # Neovim 插件配置：Code::Stats 统计
 
 >编写代码和刷算法题按下键盘的时候,一段段字符转化为可视化的 XP 是非常让人有成就感和动力的。**Code::Stats** 是免费的代码统计服务，**codestats.nvim** 则将它接入 Neovim。需要说明的是：官方暂无 Neovim 插件，这个项目由开源大佬维护。
-
-仓库
+>[仓库链接](https://github.com/liljaylj/codestats.nvim?tab=readme-ov-file)
 
 ## 1. 前置准备
 
