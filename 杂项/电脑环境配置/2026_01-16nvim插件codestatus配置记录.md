@@ -1,24 +1,33 @@
+---
+title: "2026-01-16-Neovim 插件配置：Code::Stats 统计"
+date: 2026-01-16
+tags: ["Neovim", "插件配置", "Code::Stats", "Lazy.nvim", "Windows"]
+---
 
+# Neovim 插件配置：Code::Stats 统计
 
-作为一名计算机专业的学生，看到自己的编程投入转化为实实在在的 XP（经验值）是一件非常有成就感的事情。**Code::Stats** 是一个免费的程序员统计服务，而 **codestats.nvim** 正是将这一功能完美集成到 Neovim 中的利器,需要说明的是官方暂时没有提供neovim的插件,本插件是github开源大佬提供的。
+把编码投入转化为可视化的 XP（经验值）很有激励感。**Code::Stats** 是免费的编程统计服务，**codestats.nvim** 则将它接入 Neovim。需要说明的是：官方暂无 Neovim 插件，这个项目由社区维护。
 
+## 1. 前置准备
 
-## 2. 前置准备
+安装前请确认以下条件：
+1. **Neovim** 及其基础环境。
+2. **Curl**：用于向服务器发送统计数据。
+3. **Code::Stats 账户**：注册后在 Machine Page 获取 **API Key**。  
+   https://codestats.net/my/machines
 
-在安装之前，请确保你的系统中已具备以下条件：
-1.  **Neovim** 及其基础环境。
-2.  **Curl**：用于向服务器发送统计数据。
-3.  **Code::Stats 账户**：你需要前往官网注册，并在机器页面（Machine Page）获取你的 **API Key**。
-https://codestats.net/my/machines
-## 3. 插件安装与配置
+## 2. 插件安装与配置
 
-推荐使用 **Lazy.nvim** 插件管理器进行安装。为了保持配置整洁，建议在你的配置目录（如 `~/.config/nvim/lua/plugins/`）下新建一个 `codestats.lua` 文件。
-windows环境配置目录是`用户名/.config/nvim/lua/plugins/`(如果配置过lazyvim的话),没有的话就手动创建用户名/.config/这个文件夹,并克隆lazyvim官方仓库即可
+推荐使用 **Lazy.nvim** 管理插件。为保持配置整洁，建议在插件目录下新建 `codestats.lua`：
+- macOS/Linux: `~/.config/nvim/lua/plugins/`
+- Windows: `C:\Users\<用户名>\.config\nvim\lua\plugins\`
+
+若你已使用 LazyVim，直接放入上述路径即可；否则可先克隆官方仓库：  
 https://github.com/LazyVim/LazyVim
 
 ### 核心配置代码
-在用户名/.config/nvim/lua/plugins/创建一个文件名为codestatus.lua的文件,将下面的内容中需要配置的信息填充好,直接复制到codestatus.lua里
-**特别注意**：在结构化配置中，文件必须以 **`return`** 关键字开头 [根据对话历史]。
+
+在 `lua/plugins/` 下创建 `codestats.lua`，填入以下配置（注意必须以 `return` 开头）：
 
 ```lua
 return {
@@ -40,7 +49,7 @@ return {
 }
 ```
 
-## 4. 进阶：集成到状态栏
+## 3. 进阶：集成到状态栏
 
 如果你想实时看到自己的 XP 或等级，可以将其集成到状态栏中。以常用的 **Lualine** 为例：
 
@@ -60,20 +69,20 @@ require('lualine').setup {
 }
 ```
 
-## 5. 常用交互命令
+## 4. 常用交互命令
 
 安装完成后，你可以通过以下命令手动管理数据：
 *   **`:CodeStatsXpSend`**：立即手动发送当前的 XP 统计。
 *   **`:CodeStatsProfileUpdate`**：手动从服务器拉取最新的个人资料数据。
 
-## 6. 常见故障排除
+## 5. 常见故障排除
 
 ### 1. 报错 `Failed to load ...: return expected`
 **原因**：在 `lua/plugins/` 下的文件没有使用 `return { ... }` 结构。
 **解决**：确保你的插件配置文件以 `return` 开头，将配置表传递给 Lazy.nvim。
 
 ### 2. 插件克隆失败 (`Connection was reset`)
-**原因**：通常是网络环境导致无法正常访问 GitHub,刚开始有几次配置都clone不下来,换节点就好了。
+**原因**：通常是网络环境导致无法正常访问 GitHub。  
 **解决**：
 *   在 Neovim 中输入 **`:Lazy`**，选中插件并按 **`R`** 键重试。
 *   检查你的终端是否配置了正确的网络代理。
@@ -83,6 +92,6 @@ require('lualine').setup {
 
 ---
 
-## 结语
+## 6. 结语
 
 现在就打开你的 Neovim，开始累积你的编程经验值吧！
