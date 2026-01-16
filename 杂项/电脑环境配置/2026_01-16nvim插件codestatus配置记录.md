@@ -11,8 +11,7 @@ tags:
 
 # Neovim 插件配置：Code::Stats 统计
 
->编写代码和刷算法题按下键盘的时候,一段段字符转化为可视化的 XP 是非常让人有成就感和动力的。**Code::Stats** 是免费的代码统计服务，**codestats.nvim** 则将它接入 Neovim。需要说明的是：官方暂无 Neovim 插件，这个项目由开源大佬维护。
->[仓库链接](https://github.com/liljaylj/codestats.nvim?tab=readme-ov-file)
+>编写代码和刷算法题按下键盘的时候,一段段字符转化为可视化的 XP 是非常让人有成就感和动力的。**Code::Stats** 是免费的代码统计服务，**codestats.nvim** 则将它接入 Neovim。需要说明的是：官方暂无 Neovim 插件，这个项目由开源大佬维护https://github.com/liljaylj/codestats.nvim?tab=readme-ov-file。
 
 ## 1. 前置准备
 
@@ -20,7 +19,7 @@ tags:
 1. **Neovim** 及其基础环境。
 2. **Curl**：用于向服务器发送统计数据。
 3. **Code::Stats 账户**：注册后在 Machine Page 获取 **API Key**。  
-   https://codestats.net/my/machines
+   [Machine Page](https://codestats.net/my/machines)
 
 ## 2. 插件安装与配置
 
@@ -29,7 +28,7 @@ tags:
 - Windows: `C:\Users\<用户名>\.config\nvim\lua\plugins\`
 
 若你已使用 LazyVim，直接放入上述路径即可；否则可先克隆官方仓库：  
-https://github.com/LazyVim/LazyVim
+[仓库链接](https://github.com/LazyVim/LazyVim)
 
 ### 核心配置代码
 
