@@ -1,12 +1,17 @@
 ---
-title: "2026-01-16-Neovim 插件配置：Code::Stats 统计"
+title: 2026-01-16-Neovim插件-CodeStats配置记录
 date: 2026-01-16
-tags: ["Neovim", "插件配置", "Code::Stats", "Lazy.nvim", "Windows"]
+tags:
+  - 工具配置
+  - Neovim
+  - 插件
+  - CodeStats
+  - Windows
 ---
 
 # Neovim 插件配置：Code::Stats 统计
 
-把编码投入转化为可视化的 XP（经验值）很有激励感。**Code::Stats** 是免费的编程统计服务，**codestats.nvim** 则将它接入 Neovim。需要说明的是：官方暂无 Neovim 插件，这个项目由社区维护。
+编写代码和刷算法题的时候,当你按下键盘一段段编码投入转化为可视化的 XP 是非常让人有成就感和动力的。**Code::Stats** 就是这样的免费的代码统计服务，**codestats.nvim** 则将它接入 Neovim。需要说明的是：官方暂无 Neovim 插件，这个项目由开源大佬维护。
 
 ## 1. 前置准备
 
@@ -94,4 +99,4 @@ require('lualine').setup {
 
 ## 6. 结语
 
-现在就打开你的 Neovim，开始累积你的编程经验值吧！
+希望对你有帮助,现在就打开你的 Neovim，开始累积你的编程经验值吧！
