@@ -1,4 +1,0 @@
-
-```sql
-show database
-```
