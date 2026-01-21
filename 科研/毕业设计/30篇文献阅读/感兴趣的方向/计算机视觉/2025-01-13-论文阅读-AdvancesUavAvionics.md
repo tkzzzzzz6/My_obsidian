@@ -154,7 +154,6 @@ tags:
 
 ## 六、其他
 ### 可跟进的文献  
-```bib
-
-```
+1. [DRAL: Deep Reinforcement Adaptive Learning for Multi-UAVs Navigation in Unknown Indoor Environment](https://www.alphaxiv.org/abs/2409.03930?chatId=019bdb0e-18c0-7c84-835a-11051f919725)(强化学习+集群UVAS)
+2. 
 
