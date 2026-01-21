@@ -9,7 +9,7 @@ tags:
 # 《Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling》
 
 ## 一、论文基本信息
-- [原文链接](link1),[翻译链接](link2)
+- [原文链接](https://www.alphaxiv.org/abs/2502.06703?chatId=019be074-e9d0-7eed-bdf2-01fe34e3ea54),[翻译链接](link2)
 - 作者:
 
 
