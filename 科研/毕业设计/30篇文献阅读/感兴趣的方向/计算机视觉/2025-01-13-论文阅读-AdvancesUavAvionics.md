@@ -35,6 +35,8 @@ tags:
     *   **场景稳健性**：在长走廊（几何特征退化）或强光/弱光（视觉特征消失）场景下，算法如何通过动态调整观测权重，保证定位系统不陷入不可观测状态。 
    ![1768983080620.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1768983080620.png)
    > 规划层(规划轨迹),感知层(处理原始输出),控制层(对抗干扰,控制无人机)
+   ![1768984337356.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1768984337356.png)
+   >一些寻路算法
   
 
 *   **规划控制（Planning, Control & Avoidance）：高维寻优与执行边界**
@@ -43,6 +45,9 @@ tags:
     ![1768983414901.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1768983414901.png)
     >常见的估计器分类和轨迹控制设计
     >
+    >Estimator(估计器),将不可靠的传感数据变可用
+    > 
+    >Model-base:基于公式方程的算法,Model-free:基于训练的算法
 
 *   **通信识别（Comm & Identification）：链路抖动与身份可信度**
     *   **传输确定性**：高速飞行引发的多径效应和信道快速时变，如何在算法层通过前向纠错或自适应调度，降低对飞行控制闭环的影响。
