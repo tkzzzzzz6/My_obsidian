@@ -13,9 +13,7 @@ tags:
 - 作者:Runze Liu1,2,∗, Junqi Gao1,3, Jian Zhao4, Kaiyan Zhang2, Xiu Li2, Biqing Qi1,†, Wanli Ouyang1 and
 Bowen Zhou1,2,†
 
-
-
-> 关键词:。  
+> 关键词:Test-Time Scaling (TTS),过程奖励模型(PRM),小语言模型(SLMs) 。  
 
 ## 二、研究背景与问题定义
 
