@@ -1,11 +1,12 @@
 ---
-title: 2026-01-19-论文阅读-AgiBot
-date: 2026-01-19
+title: 2026-01-20-论文阅读-Can-1B-LLM Surpass-405B-LLM?
+date: 2026-01-20
 tags:
   - 论文阅读
-  - 具身智能
+  - TTS(推理侧缩放)
+  - LLM
 ---
-# 《论文标题》
+# 《Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling》
 
 ## 一、论文基本信息
 - [原文链接](link1),[翻译链接](link2)
