@@ -157,4 +157,5 @@ tags:
 1. [DRAL: Deep Reinforcement Adaptive Learning for Multi-UAVs Navigation in Unknown Indoor Environment](https://www.alphaxiv.org/abs/2409.03930?chatId=019bdb0e-18c0-7c84-835a-11051f919725)(强化学习+集群UVAS)
 2. [Deep Convolutional Neural Network-Based Autonomous Drone Navigation](https://www.alphaxiv.org/abs/1905.01657?chatId=019bdb10-4de7-724e-823e-6218fdb970db)(无人机自主导航,CNN,比较久远了)
 3. [Securing the Skies: A Comprehensive Survey on Anti-UAV Methods, Benchmarking, and Future Directions](https://www.alphaxiv.org/abs/2504.11967v3?chatId=019bdfd3-315d-7fd9-b9ef-92e8625d3abf)(无人机反制)
+4. [Recent Advances in Transformer and Large Language Models for UAV Applications](https://www.alphaxiv.org/abs/2508.11834?chatId=019be012-2634-7d6d-80e2-3185d9340b6a)(transformer+LLM for UVA)
 
