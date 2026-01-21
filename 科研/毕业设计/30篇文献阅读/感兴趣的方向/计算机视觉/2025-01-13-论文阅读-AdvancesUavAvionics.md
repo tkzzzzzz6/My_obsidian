@@ -154,5 +154,5 @@ tags:
 1. [DRAL: Deep Reinforcement Adaptive Learning for Multi-UAVs Navigation in Unknown Indoor Environment](https://www.alphaxiv.org/abs/2409.03930?chatId=019bdb0e-18c0-7c84-835a-11051f919725)(多无人机在未知室内环境中的深度强化学习导航)
 2. [Deep Convolutional Neural Network-Based Autonomous Drone Navigation](https://www.alphaxiv.org/abs/1905.01657?chatId=019bdb10-4de7-724e-823e-6218fdb970db)(无人机自主导航,CNN,比较久远了)
 3. [Securing the Skies: A Comprehensive Survey on Anti-UAV Methods, Benchmarking, and Future Directions](https://www.alphaxiv.org/abs/2504.11967v3?chatId=019bdfd3-315d-7fd9-b9ef-92e8625d3abf)(无人机反制)
-4. [Towards Robust Multi-UAV Collaboration: MARL with Noise-Resilient Communication and Attention Mechanisms](https://www.alphaxiv.org/abs/2503.02913?chatId=019be017-e319-7655-bee7-602ebcdaeb44)(鲁棒的多无人机协作与抗噪声通信)
+4. [Towards Robust Multi-UAV Collaboration: MARL with Noise-Resilient Communication and Attention Mechanisms](https://www.alphaxiv.org/abs/2503.02913?chatId=019be017-e319-7655-bee7-602ebcdaeb44)(鲁棒的多无人机协作与抗噪声通信,agent)
 
