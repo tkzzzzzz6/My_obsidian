@@ -16,6 +16,8 @@ tags:
 
 ## 二、研究背景与问题定义
 
+![1769078836045.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1769078836045.png)
+
 
 ### A. 范式转移：从“静态生成”到“智能体交互”
 传统 LLM 推理（LLM Reasoning）主要被视为一种对静态输入的单次（One-shot）或少数次（Few-shot）预测任务。虽然思维链（CoT）等技术增强了模型的计算深度，但其局限性日益凸显：
