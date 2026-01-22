@@ -109,4 +109,5 @@ Qwen2.5-72B-Instruct 在 MATH-500 数据集上的准确率分布，其中超过 
 1. [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://www.alphaxiv.org/abs/2408.03314)(证明了在某些任务中，扩展推理计算资源所带来的收益可以超过将模型参数规模扩大14倍的效果。)
 2. [A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning](https://www.alphaxiv.org/abs/2501.02497)(综述了大语言模型从“系统1”（直觉快思考）向“系统2”（深思熟虑的慢思考）转型的技术路径。)
 3. [Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs](https://www.alphaxiv.org/abs/2412.21187)(“过度思考”问题，模型在处理简单任务时消耗了过多不必要的计算资源)
+4. [Video-T1: Test-Time Scaling for Video Generation](https://www.alphaxiv.org/abs/2503.18942)(将测试时缩放(TTS)从文本领域延伸到视频生成)
 
