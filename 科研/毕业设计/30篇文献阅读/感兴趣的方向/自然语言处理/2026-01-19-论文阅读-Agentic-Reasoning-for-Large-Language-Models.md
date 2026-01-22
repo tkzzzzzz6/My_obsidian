@@ -55,6 +55,11 @@ tags:
 
 论文将智能体推理的技术路线通过“三个能力层级”和“两种优化模式”构筑成一个立体的系统架构。
 
+![1769079225940.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1769079225940.png)
+规划方法分为了两大核心阵营：在上下文规划（In-context Planning）和训练后规划（Post-training Planning）。
+> - 在上下文规划 (In-context Planning):不需要修改模型参数，通过提示词工程和推理算法来实现规划
+> - 训练后规划 (Post-training Planning):通过直接优化模型参数，让模型原生具备规划直觉(SFT/RL)
+
 ### 1. 推理能力的三个能力层级（层级维度）
 这是智能体从单体功能到群体协作的演进路径：
 
