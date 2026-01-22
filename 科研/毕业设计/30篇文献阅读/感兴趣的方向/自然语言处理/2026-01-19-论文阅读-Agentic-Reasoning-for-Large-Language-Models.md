@@ -41,6 +41,8 @@ tags:
 *   **学习（Learning）：** 离线知识固定 $\leftrightarrow$ 自进化能力（Self-evolving）。
 *   **目标导向（Goal Orientation）：** 基于提示词的反应 $\leftrightarrow$ 显式的规划与目标驱动。
 
+![1769079113660.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1769079113660.png)
+传统 LLM 推理与智能体推理（Agentic Reasoning）在五个核心维度上的区别。
 
 ### D. 待解决的问题（Problem Statement）
 论文旨在回答：如何构建一个统一的路线图，使 LLM 能够超越简单的输入-输出映射，在**开放世界**和**动态环境**中具备以下能力：
