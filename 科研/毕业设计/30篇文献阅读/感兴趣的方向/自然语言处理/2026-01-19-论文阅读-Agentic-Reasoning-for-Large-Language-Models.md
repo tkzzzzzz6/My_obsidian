@@ -60,6 +60,9 @@ tags:
 > - 在上下文规划 (In-context Planning):不需要修改模型参数，通过提示词工程和推理算法来实现规划
 > - 训练后规划 (Post-training Planning):通过直接优化模型参数，让模型原生具备规划直觉(SFT/RL)
 
+![1769079653686.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1769079653686.png)
+传统检索增强生成（Traditional RAG）与智能体搜索系统（Agentic Search System）的区别
+
 ### 1. 推理能力的三个能力层级（层级维度）
 这是智能体从单体功能到群体协作的演进路径：
 
