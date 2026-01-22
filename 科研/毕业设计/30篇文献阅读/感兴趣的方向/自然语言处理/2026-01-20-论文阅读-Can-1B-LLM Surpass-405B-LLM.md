@@ -106,5 +106,6 @@ Qwen2.5-72B-Instruct 在 MATH-500 数据集上的准确率分布，其中超过 
 >现在大模型都在研究“路由器模型（Router Model）”来决定何时开启重推理
 ## 七、其他
 ### 可跟进的文献  
-
+1. [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://www.alphaxiv.org/abs/2408.03314)(证明了在某些任务中，扩展推理计算资源所带来的收益可以超过将模型参数规模扩大14倍的效果。)
+2. [A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning](https://www.alphaxiv.org/abs/2501.02497)()
 
