@@ -4,3 +4,7 @@
 [ubuntu server下载链接](https://ubuntu.com/download/raspberry-pi)
 
 [Ubuntu 22.04](https://releases.ubuntu.com/22.04/?_ga=2.149898549.2084151835.1707729318-1126754318.1683186906&_gl=1*mqxdt1*_gcl_au*MTUzMzQ2MDI3Ni4xNzY5Njk0NTU3)
+
+raspberry pi imager 这个软件可以从网上自动安装主流的os哈哈
+
+![1769696444760.png](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/1769696444760.png)
