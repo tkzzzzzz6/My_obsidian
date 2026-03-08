@@ -67,7 +67,6 @@ def main() -> None:
     labels = list(DATA.keys())
     values = list(DATA.values())
     colors = [COLORS[label] for label in labels]
-    depth_colors = [darken_color(color, 0.68) for color in colors]
     explode = [0.03 if label == "河道" else 0 for label in labels]
 
     fig = plt.figure(figsize=(12, 7), dpi=200)
@@ -76,13 +75,15 @@ def main() -> None:
     ax_pie = fig.add_subplot(gs[0, 0])
     ax_legend = fig.add_subplot(gs[0, 1])
 
-    depth = 0.16
-    layers = 14
+    depth = 0.24
+    layers = 24
     for i in range(layers):
         offset = -depth + (i / (layers - 1)) * depth
+        shade_factor = 0.42 + 0.28 * (i / (layers - 1))
+        layer_colors = [darken_color(color, shade_factor) for color in colors]
         ax_pie.pie(
             values,
-            colors=depth_colors,
+            colors=layer_colors,
             startangle=120,
             counterclock=False,
             explode=explode,
@@ -105,7 +106,7 @@ def main() -> None:
 
     ax_pie.text(
         0,
-        0.08,
+        0.22,
         "61.16%",
         ha="center",
         va="center",
@@ -115,16 +116,16 @@ def main() -> None:
     )
     ax_pie.text(
         0,
-        -0.12,
+        0.03,
         "溺水发生在河道",
         ha="center",
         va="center",
         fontsize=14,
         color="#355F66",
     )
-    ax_pie.set(aspect="equal")
-    ax_pie.set_xlim(-1.35, 1.25)
-    ax_pie.set_ylim(-1.28, 1.08)
+    ax_pie.set_aspect(0.58)
+    ax_pie.set_xlim(-1.42, 1.28)
+    ax_pie.set_ylim(-1.55, 0.98)
     ax_pie.set_title(TITLE, fontsize=18, fontweight="bold", pad=18)
 
     legend_handles = [Patch(facecolor=COLORS[label], edgecolor="none", label=label) for label in labels]
