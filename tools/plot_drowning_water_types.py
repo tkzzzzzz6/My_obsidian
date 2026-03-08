@@ -52,7 +52,7 @@ def configure_matplotlib() -> None:
     plt.rcParams["savefig.facecolor"] = "white"
 
 
-def darken_color(color: str, factor: float = 0.72) -> tuple[float, float, float]:
+def darken_color(color: str, factor: float = 0.8) -> tuple[float, float, float]:
     r, g, b = mcolors.to_rgb(color)
     return (r * factor, g * factor, b * factor)
 
@@ -75,11 +75,11 @@ def main() -> None:
     ax_pie = fig.add_subplot(gs[0, 0])
     ax_legend = fig.add_subplot(gs[0, 1])
 
-    depth = 0.24
-    layers = 24
+    depth = 0.18
+    layers = 18
     for i in range(layers):
         offset = -depth + (i / (layers - 1)) * depth
-        shade_factor = 0.42 + 0.28 * (i / (layers - 1))
+        shade_factor = 0.62 + 0.18 * (i / (layers - 1))
         layer_colors = [darken_color(color, shade_factor) for color in colors]
         ax_pie.pie(
             values,
@@ -101,12 +101,12 @@ def main() -> None:
         radius=1.0,
         center=(0, 0),
         wedgeprops={"edgecolor": "white", "linewidth": 2},
-        shadow=True,
+        shadow=False,
     )
 
     ax_pie.text(
-        0,
-        0.22,
+        0.40,
+        0.18,
         "61.16%",
         ha="center",
         va="center",
@@ -115,17 +115,17 @@ def main() -> None:
         color="#1F4F56",
     )
     ax_pie.text(
-        0,
-        0.03,
+        0.40,
+        0.00,
         "溺水发生在河道",
         ha="center",
         va="center",
         fontsize=14,
         color="#355F66",
     )
-    ax_pie.set_aspect(0.58)
-    ax_pie.set_xlim(-1.42, 1.28)
-    ax_pie.set_ylim(-1.55, 0.98)
+    ax_pie.set_aspect(0.72)
+    ax_pie.set_xlim(-1.30, 1.22)
+    ax_pie.set_ylim(-1.34, 1.02)
     ax_pie.set_title(TITLE, fontsize=18, fontweight="bold", pad=18)
 
     legend_handles = [Patch(facecolor=COLORS[label], edgecolor="none", label=label) for label in labels]
