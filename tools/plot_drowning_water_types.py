@@ -75,7 +75,7 @@ def main() -> None:
         startangle=120,
         counterclock=False,
         explode=explode,
-        wedgeprops={"width": 0.42, "edgecolor": "white", "linewidth": 2},
+        wedgeprops={"edgecolor": "white", "linewidth": 2},
         shadow=True,
     )
 
