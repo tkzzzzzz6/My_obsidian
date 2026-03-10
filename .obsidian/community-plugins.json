@@ -9,5 +9,7 @@
   "dataview",
   "obsidian-auto-link-title",
   "obsidian-image-auto-upload-plugin",
-  "code-styler"
+  "code-styler",
+  "codestats",
+  "obsidian-wakatime"
 ]
