@@ -3,5 +3,9 @@
     "*.ttml": "xml",
     "*.ttss": "css"
   },
-  "todo-tree.tree.disableCompactFolders": true
+  "todo-tree.tree.disableCompactFolders": true,
+  "editor.cursorShape": "line",
+  "editor.guides.bracketPairs": "active",
+  "editor.renderLineHighlight": "all",
+  "editor.wordWrap": "on"
 }
