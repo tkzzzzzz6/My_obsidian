@@ -7,5 +7,7 @@
   "editor.cursorShape": "line",
   "editor.guides.bracketPairs": "active",
   "editor.renderLineHighlight": "all",
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
