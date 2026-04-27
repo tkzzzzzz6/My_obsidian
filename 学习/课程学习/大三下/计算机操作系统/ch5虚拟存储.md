@@ -28,3 +28,11 @@ optimal
 FIFO
 LRU
 clock
+
+缺页率的计算
+
+总结:
+
+预测部分
+
+类比cpu 的分支预测?

@@ -1,0 +1,127 @@
+# 保研推荐信信息收集表
+
+# ==================== 基本信息 ====================
+[basic_info]
+your_name = "谭棵"
+your_gender = "男"
+your_major = "计算机科学与技术"
+your_student_id = "202306630"
+your_school = "四川农业大学"
+your_college = "信息工程学院"
+entry_date = "2023年9月"
+apply_university = ""
+apply_major = "申请专业方向"
+apply_degree = "申请学位（硕士/直博）"
+
+# ==================== 学业背景 ====================
+[academic_background]
+gpa = "平均学分绩点 4.50"
+ranking = "必修课加权平均 95.43，专业排名 1/215；所有课程加权平均 94.99，专业排名 2/215"
+honors = [
+  "比亚迪奖学金",
+]
+
+[academic_background.english_level]
+cet4 = "543"
+cet6 = "498"
+ielts = ""
+toefl = ""
+
+# ==================== 第一推荐人 ====================
+[first_recommender]
+name = "陈晓燕"
+title = "教授"
+position = "计算机专业系主任"
+department = "待确认"
+email = "待确认"
+phone = "待确认"
+relationship = "待结合陈老师授课/指导经历补充"
+know_years = "待确认"
+
+[first_recommender.content]
+academic_ability = "必修课加权平均 95.43，专业排名 1/215；所有课程加权平均 94.99，整体课程成绩稳定，学习能力和自我驱动较强。"
+character_traits = "踏实自律，执行力较强，做事认真，具备一定的团队协作和任务推进能力。"
+specific_examples = [
+  "本科阶段多门核心课程成绩突出，数学与计算机专业基础较扎实。",
+  "作为校级科研兴趣培养计划项目负责人，能够持续推进在研任务，体现出较好的责任心与组织能力。",
+]
+recommendation_reason = "学业基础扎实，专业排名靠前，具备继续从事计算机方向研究和深造的潜力。"
+
+[[first_recommender.content.outstanding_courses]]
+course_name = "线性代数"
+course_score = "99"
+performance_description = "数学基础扎实，对抽象概念理解较快，能够较好完成知识迁移。"
+
+[[first_recommender.content.outstanding_courses]]
+course_name = "数据结构"
+course_score = "95"
+performance_description = "专业核心课程表现稳定，分析问题与实现能力较强。"
+
+[[first_recommender.content.outstanding_courses]]
+course_name = "编译原理及应用"
+course_score = "99"
+performance_description = "对专业核心内容掌握较扎实，体现出较强的学习能力与专业素养。"
+
+# ==================== 第二推荐人 ====================
+[second_recommender]
+name = "段旭良"
+title = "教授"
+position = "四川农业大学大数据应用实验室指导老师"
+department = "信息工程学院数据科学与大数据技术系副院长"
+email = "待确认"
+phone = "待确认"
+relationship = "大数据应用实验室指导老师；《信息安全技术》课程任课教师"
+know_years = "待确认"
+
+[second_recommender.content]
+research_potential = "已参与医学图像分割、空间多组学等论文工作，并持续进行多模态 Agent 与知识图谱方向预研，具备较好的科研敏感度与问题抽象能力。"
+practical_ability = "具备较强的代码实现与原型搭建能力，能够将研究思路落实到系统原型与实验验证中。"
+specific_examples = [
+  "作为第一作者完成 ICASSP 2026 会议论文，并参与实验室多篇会议论文工作。",
+  "基于 LangGraph 搭建垂直场景 Agent 系统，同时承担校级科研兴趣培养计划项目负责人角色。",
+]
+recommendation_reason = "具备扎实的学业基础、持续的科研投入和较强的工程落地能力，适合在计算机相关方向继续深造。"
+
+[[second_recommender.content.research_projects]]
+project_name = "2026年校级科研兴趣培养计划项目《基于知识图谱的多学科推理问答》（项目编号：20262822）"
+your_role = "项目负责人"
+your_contribution = "负责项目选题与整体推进，围绕知识图谱与多学科推理问答开展在研工作。"
+ability_shown = "体现出较强的科研兴趣、项目组织能力与持续推进能力。"
+
+[[second_recommender.content.research_projects]]
+project_name = "多模态大模型/Agent 预研"
+your_role = "主要参与者/独立推进"
+your_contribution = "基于 LangGraph 搭建垂直场景 Agent 系统，并持续跟踪 VLA 模型调度逻辑与相关论文技术。"
+ability_shown = "体现出较强的工程实现能力、前沿技术跟踪能力与自我驱动能力。"
+
+[[second_recommender.content.publications]]
+title = "TOWARD ROBUST SPATIAL MULTI-OMICS INTEGRATION: SPATIAL MULTI-OMICS INTEGRATION VIA ALIGNMENT AND SCHEDULED DIFFUSION"
+role = "第一作者"
+conference_journal = "IEEE ICASSP 2026"
+
+[[second_recommender.content.publications]]
+title = "其余已发表/录用论文"
+role = "根据现有套磁材料：CCF-B 类会议论文共 3 篇（其中 1 篇一作、1 篇共一第二、1 篇四作），SCI 二区论文 1 篇（二作）"
+conference_journal = "待按简历或正式录用证明补齐具体题目与会议/期刊名称"
+
+[[second_recommender.content.competition_awards]]
+competition_name = "高通边缘计算比赛"
+award_level = "创新奖"
+your_contribution = "参与算法/系统实现与落地开发，积累了边缘部署相关经验。"
+
+
+
+[[second_recommender.content.competition_awards]]
+competition_name = "数学建模竞赛"
+award_level = "多项省级及以上奖项（具体名称与等级待补齐）"
+your_contribution = "负责建模、算法分析与部分实现工作，训练了问题抽象与团队协作能力。"
+
+# ==================== 共同特质 ====================
+[common_traits]
+strengths = [
+  "学业基础扎实，必修课加权平均 95.43，专业排名 1/215",
+  "科研兴趣明确，持续参与论文、项目与实验室工作",
+  "工程实现能力较强，能将前沿方法快速落到系统与代码",
+]
+weakness = "有时对研究问题投入较深，后续可继续提升多任务并行管理与时间分配能力。"
+future_plan = "继续围绕多模态大模型、Agent、知识图谱推理与 AI4Science 交叉方向开展研究，并在研究生阶段进一步强化理论基础与科研产出能力。"
