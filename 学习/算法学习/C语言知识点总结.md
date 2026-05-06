@@ -1,5 +1,6 @@
 # 输入输出
 ```c
-// 输出
+
+int printf(const char *format, ...);
 ```
 
