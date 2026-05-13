@@ -9,7 +9,7 @@
   },
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "/",
-  "newFileLocation": "root",
+  "newFileLocation": "current",
   "showLineNumber": true,
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
