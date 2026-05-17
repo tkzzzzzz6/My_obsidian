@@ -58,3 +58,9 @@ status:   in al, dx       ; 读状态端口
 - 软件查询
 - 硬件查询
 - 可编程中断控制器
+
+
+```asm
+mov al,01h
+out 20h,al
+```
